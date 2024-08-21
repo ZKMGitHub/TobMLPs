@@ -1,0 +1,18 @@
+[2024-03-22 00:00:48,578][schnetpack.cli][INFO] - Running on host: ubuntu-GPU2
+[2024-03-22 00:00:48,651][schnetpack.cli][INFO] - Seed randomly...
+[2024-03-22 00:00:48,656][schnetpack.cli][INFO] - Instantiating datamodule <schnetpack.data.AtomsDataModule>
+[2024-03-22 00:00:48,665][schnetpack.cli][INFO] - Instantiating model <schnetpack.model.NeuralNetworkPotential>
+[2024-03-22 00:00:48,707][schnetpack.cli][INFO] - Instantiating task <schnetpack.AtomisticTask>
+[2024-03-22 00:00:48,962][schnetpack.cli][INFO] - Instantiating callback <schnetpack.train.ModelCheckpoint>
+[2024-03-22 00:00:48,965][schnetpack.cli][INFO] - Instantiating callback <pytorch_lightning.callbacks.EarlyStopping>
+[2024-03-22 00:00:48,966][schnetpack.cli][INFO] - Instantiating callback <pytorch_lightning.callbacks.LearningRateMonitor>
+[2024-03-22 00:00:48,966][schnetpack.cli][INFO] - Instantiating callback <schnetpack.train.ExponentialMovingAverage>
+[2024-03-22 00:00:48,967][schnetpack.cli][INFO] - Instantiating logger <pytorch_lightning.loggers.csv_logs.CSVLogger>
+[2024-03-22 00:00:48,968][schnetpack.cli][INFO] - Instantiating trainer <pytorch_lightning.Trainer>
+[2024-03-22 00:00:49,198][schnetpack.cli][INFO] - Logging hyperparameters.
+[2024-03-22 00:00:49,199][schnetpack.cli][INFO] - Starting training.
+[2024-03-22 03:50:42,437][schnetpack.cli][INFO] - Starting testing.
+[2024-03-22 03:50:59,925][schnetpack.cli][INFO] - Best checkpoint path:
+/home/zkm/MLIP/SchNet/schnetpack/tobermorite_train/painn/tob14/runs/large/2f0e77e0-e79c-11ee-8013-000af776dff0/checkpoints/epoch=694.ckpt
+[2024-03-22 03:50:59,925][schnetpack.cli][INFO] - Store best model
+[2024-03-22 03:51:00,131][schnetpack.cli][INFO] - Best model stored at /home/zkm/MLIP/SchNet/schnetpack/tobermorite_train/painn/tob14/runs/large/2f0e77e0-e79c-11ee-8013-000af776dff0/best_model

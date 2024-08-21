@@ -1,0 +1,156 @@
+Fri Apr 19 20:11:32 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.104.12             Driver Version: 535.104.12   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-PCIE-40GB          On  | 00000000:82:00.0 Off |                    0 |
+| N/A   34C    P0              37W / 250W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+cuda-11.1 loaded successful
+gcc-9.3.0 loaded successful
+Currently Loaded Modulefiles:
+ 1) anaconda/2021.11      3) cudnn/8.2.1.32_cuda11.x  
+ 2) compilers/cuda/11.1   4) compilers/gcc/9.3.0      
+1.10.1+cu11.1
+True
+                Step[ FC]     Time          Energy          fmax
+*Force-consistent energies used in optimization.
+BFGSLineSearch:    0[  0] 20:11:42     -570.857544*       4.0809
+BFGSLineSearch:    1[  2] 20:11:51     -573.177307*       2.5550
+BFGSLineSearch:    2[  4] 20:11:59     -574.294128*       2.8089
+BFGSLineSearch:    3[  6] 20:12:08     -575.025574*       1.1929
+BFGSLineSearch:    4[  8] 20:12:17     -575.407837*       1.3885
+BFGSLineSearch:    5[ 10] 20:12:25     -575.885559*       1.2142
+BFGSLineSearch:    6[ 12] 20:12:33     -576.194763*       0.8894
+BFGSLineSearch:    7[ 14] 20:12:41     -576.470154*       0.8232
+BFGSLineSearch:    8[ 16] 20:12:50     -576.633789*       0.6903
+BFGSLineSearch:    9[ 18] 20:12:58     -576.803284*       0.8722
+BFGSLineSearch:   10[ 20] 20:13:06     -576.954956*       0.7147
+BFGSLineSearch:   11[ 22] 20:13:14     -577.079102*       0.6758
+BFGSLineSearch:   12[ 24] 20:13:23     -577.158386*       0.4874
+BFGSLineSearch:   13[ 26] 20:13:31     -577.243896*       0.6448
+BFGSLineSearch:   14[ 28] 20:13:39     -577.346558*       0.6490
+BFGSLineSearch:   15[ 30] 20:13:48     -577.407043*       0.3963
+BFGSLineSearch:   16[ 32] 20:13:56     -577.459167*       0.5447
+BFGSLineSearch:   17[ 34] 20:14:05     -577.498047*       0.3654
+BFGSLineSearch:   18[ 36] 20:14:13     -577.533630*       0.3896
+BFGSLineSearch:   19[ 38] 20:14:22     -577.551208*       0.2968
+BFGSLineSearch:   20[ 40] 20:14:29     -577.579224*       0.3270
+BFGSLineSearch:   21[ 42] 20:14:38     -577.598877*       0.2123
+BFGSLineSearch:   22[ 44] 20:14:46     -577.611511*       0.2464
+BFGSLineSearch:   23[ 46] 20:14:54     -577.627808*       0.2491
+BFGSLineSearch:   24[ 48] 20:15:03     -577.636292*       0.2451
+BFGSLineSearch:   25[ 50] 20:15:10     -577.646973*       0.2990
+BFGSLineSearch:   26[ 52] 20:15:18     -577.654663*       0.2330
+BFGSLineSearch:   27[ 54] 20:15:26     -577.660950*       0.2200
+BFGSLineSearch:   28[ 56] 20:15:34     -577.666504*       0.1341
+BFGSLineSearch:   29[ 58] 20:15:43     -577.671753*       0.1112
+BFGSLineSearch:   30[ 60] 20:15:51     -577.676086*       0.1376
+BFGSLineSearch:   31[ 62] 20:15:59     -577.680603*       0.1480
+BFGSLineSearch:   32[ 64] 20:16:07     -577.684814*       0.2354
+BFGSLineSearch:   33[ 66] 20:16:15     -577.689270*       0.1978
+BFGSLineSearch:   34[ 68] 20:16:24     -577.694519*       0.1237
+BFGSLineSearch:   35[ 70] 20:16:32     -577.697388*       0.1128
+BFGSLineSearch:   36[ 72] 20:16:40     -577.702087*       0.1219
+BFGSLineSearch:   37[ 74] 20:16:49     -577.704346*       0.1256
+BFGSLineSearch:   38[ 76] 20:16:57     -577.707825*       0.1308
+BFGSLineSearch:   39[ 78] 20:17:05     -577.710632*       0.1372
+BFGSLineSearch:   40[ 80] 20:17:13     -577.712952*       0.1430
+BFGSLineSearch:   41[ 82] 20:17:21     -577.715210*       0.0719
+BFGSLineSearch:   42[ 84] 20:17:30     -577.717468*       0.0887
+BFGSLineSearch:   43[ 86] 20:17:39     -577.719604*       0.1088
+BFGSLineSearch:   44[ 88] 20:17:47     -577.721741*       0.1225
+BFGSLineSearch:   45[ 90] 20:17:55     -577.724243*       0.0946
+BFGSLineSearch:   46[ 92] 20:18:03     -577.726135*       0.1178
+BFGSLineSearch:   47[ 94] 20:18:11     -577.728271*       0.1465
+BFGSLineSearch:   48[ 96] 20:18:19     -577.730469*       0.0916
+BFGSLineSearch:   49[ 98] 20:18:27     -577.733093*       0.1130
+BFGSLineSearch:   50[100] 20:18:35     -577.735168*       0.1149
+BFGSLineSearch:   51[102] 20:18:43     -577.738342*       0.0800
+BFGSLineSearch:   52[104] 20:18:52     -577.740234*       0.1139
+BFGSLineSearch:   53[105] 20:18:56     -577.742798*       0.1720
+BFGSLineSearch:   54[107] 20:19:04     -577.745239*       0.0879
+BFGSLineSearch:   55[108] 20:19:08     -577.747253*       0.1302
+BFGSLineSearch:   56[110] 20:19:16     -577.749390*       0.0773
+BFGSLineSearch:   57[112] 20:19:24     -577.751404*       0.0984
+BFGSLineSearch:   58[114] 20:19:32     -577.753357*       0.0832
+BFGSLineSearch:   59[116] 20:19:41     -577.755798*       0.1152
+BFGSLineSearch:   60[118] 20:19:49     -577.757568*       0.1312
+BFGSLineSearch:   61[120] 20:19:57     -577.760620*       0.0888
+BFGSLineSearch:   62[122] 20:20:05     -577.762390*       0.1341
+BFGSLineSearch:   63[124] 20:20:13     -577.765015*       0.0757
+BFGSLineSearch:   64[126] 20:20:21     -577.766541*       0.1009
+BFGSLineSearch:   65[128] 20:20:30     -577.768860*       0.0900
+BFGSLineSearch:   66[130] 20:20:38     -577.771118*       0.0922
+BFGSLineSearch:   67[132] 20:20:46     -577.772888*       0.0816
+BFGSLineSearch:   68[133] 20:20:50     -577.775024*       0.1476
+BFGSLineSearch:   69[135] 20:20:58     -577.777222*       0.0766
+BFGSLineSearch:   70[137] 20:21:07     -577.779297*       0.1232
+BFGSLineSearch:   71[139] 20:21:15     -577.780396*       0.0795
+BFGSLineSearch:   72[141] 20:21:23     -577.781494*       0.0871
+BFGSLineSearch:   73[143] 20:21:32     -577.782532*       0.0841
+BFGSLineSearch:   74[145] 20:21:41     -577.783875*       0.0660
+BFGSLineSearch:   75[147] 20:21:49     -577.784851*       0.0501
+BFGSLineSearch:   76[149] 20:21:57     -577.785400*       0.0475
+BFGSLineSearch:   77[151] 20:22:05     -577.786133*       0.0593
+BFGSLineSearch:   78[153] 20:22:13     -577.787170*       0.0550
+BFGSLineSearch:   79[155] 20:22:21     -577.787476*       0.0385
+BFGSLineSearch:   80[157] 20:22:29     -577.788208*       0.0604
+BFGSLineSearch:   81[159] 20:22:39     -577.788574*       0.0573
+BFGSLineSearch:   82[161] 20:22:47     -577.789124*       0.0404
+BFGSLineSearch:   83[163] 20:22:56     -577.789429*       0.0547
+BFGSLineSearch:   84[165] 20:23:04     -577.789978*       0.0371
+BFGSLineSearch:   85[167] 20:23:12     -577.790283*       0.0367
+BFGSLineSearch:   86[169] 20:23:21     -577.790405*       0.0237
+BFGSLineSearch:   87[170] 20:23:25     -577.790649*       0.0458
+BFGSLineSearch:   88[172] 20:23:34     -577.790771*       0.0428
+BFGSLineSearch:   89[173] 20:23:38     -577.791016*       0.0430
+BFGSLineSearch:   90[175] 20:23:46     -577.791138*       0.0459
+BFGSLineSearch:   91[176] 20:23:50     -577.791382*       0.0276
+BFGSLineSearch:   92[232] 20:27:15     -577.791382*       0.0275
+BFGSLineSearch:   93[234] 20:27:23     -577.791443*       0.0215
+BFGSLineSearch:   94[237] 20:27:35     -577.791504*       0.0161
+BFGSLineSearch:   95[239] 20:27:43     -577.791626*       0.0256
+BFGSLineSearch:   96[305] 20:31:59     -577.791626*       0.0254
+BFGSLineSearch:   97[365] 20:35:48     -577.791626*       0.0154
+BFGSLineSearch:   98[368] 20:36:00     -577.791687*       0.0126
+BFGSLineSearch:   99[431] 20:39:56     -577.791809*       0.0116
+BFGSLineSearch:  100[436] 20:40:17     -577.791748*       0.0116
+BFGSLineSearch:  101[490] 20:43:30     -577.791748*       0.0115
+BFGSLineSearch:  102[517] 20:45:11     -577.791809*       0.0210
+BFGSLineSearch:  103[581] 20:49:13     -577.791809*       0.0203
+BFGSLineSearch:  104[649] 20:53:07     -577.791809*       0.0198
+BFGSLineSearch:  105[654] 20:53:28     -577.791748*       0.0198
+BFGSLineSearch:  106[696] 20:56:15     -577.791748*       0.0347
+BFGSLineSearch:  107[698] 20:56:23     -577.791992*       0.0199
+BFGSLineSearch:  108[702] 20:56:39     -577.791992*       0.0199
+BFGSLineSearch:  109[765] 21:00:51     -577.791992*       0.0192
+BFGSLineSearch:  110[770] 21:01:12     -577.791870*       0.0192
+BFGSLineSearch:  111[776] 21:01:36     -577.791992*       0.0113
+BFGSLineSearch:  112[788] 21:02:26     -577.792053*       0.0050
+/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/nequip/utils/_global_options.py:45: UserWarning: Setting the GLOBAL value for allow_tf32 to False which is different than the previous value of True
+  warnings.warn(
+/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/nequip/utils/_global_options.py:69: UserWarning: Setting the GLOBAL value for jit bailout depth to `2` which is different than the previous value of `20`
+  warnings.warn(
+/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/nequip/ase/nequip_calculator.py:73: UserWarning: Trying to use chemical symbols as NequIP type names; this may not be correct for your model! To avoid this warning, please provide `species_to_type_name` explicitly.
+  warnings.warn(
+/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/ase/io/extxyz.py:1000: UserWarning: write_xyz() overwriting array "forces" present in atoms.arrays with stored results from calculator
+  warnings.warn('write_xyz() overwriting array "{0}" present '
+Traceback (most recent call last):
+  File "MD.py", line 73, in <module>
+    init_velocities(molecule = molecule, temp_init=temp_init)
+  File "MD.py", line 51, in init_velocities
+    MaxwellBoltzmannDistribution(molecule, temp_init * units.kB)
+NameError: name 'MaxwellBoltzmannDistribution' is not defined

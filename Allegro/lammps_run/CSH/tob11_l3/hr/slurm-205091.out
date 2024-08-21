@@ -1,0 +1,61 @@
+Fri Apr 19 21:48:00 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.104.12             Driver Version: 535.104.12   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-PCIE-40GB          On  | 00000000:82:00.0 Off |                    0 |
+| N/A   33C    P0              34W / 250W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+cuda-11.1 loaded successful
+gcc-9.3.0 loaded successful
+Currently Loaded Modulefiles:
+ 1) anaconda/2021.11      3) cudnn/8.2.1.32_cuda11.x  
+ 2) compilers/cuda/11.1   4) compilers/gcc/9.3.0      
+1.10.1+cu11.1
+True
+/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/nequip/utils/_global_options.py:45: UserWarning: Setting the GLOBAL value for allow_tf32 to False which is different than the previous value of True
+  warnings.warn(
+/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/nequip/utils/_global_options.py:69: UserWarning: Setting the GLOBAL value for jit bailout depth to `2` which is different than the previous value of `20`
+  warnings.warn(
+/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/nequip/ase/nequip_calculator.py:73: UserWarning: Trying to use chemical symbols as NequIP type names; this may not be correct for your model! To avoid this warning, please provide `species_to_type_name` explicitly.
+  warnings.warn(
+/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/ase/md/md.py:48: FutureWarning: Specify the temperature in K using the 'temperature_K' argument
+  warnings.warn(FutureWarning(w))
+Optimization has been done!
+Traceback (most recent call last):
+  File "MD.py", line 113, in <module>
+    dynamics.run(1000000)
+  File "/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/ase/md/md.py", line 137, in run
+    return Dynamics.run(self)
+  File "/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/ase/optimize/optimize.py", line 156, in run
+    for converged in Dynamics.irun(self):
+  File "/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/ase/optimize/optimize.py", line 135, in irun
+    self.step()
+  File "/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/ase/md/langevin.py", line 171, in step
+    forces = atoms.get_forces(md=True)
+  File "/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/ase/atoms.py", line 788, in get_forces
+    forces = self._calc.get_forces(self)
+  File "/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/ase/calculators/abc.py", line 23, in get_forces
+    return self.get_property('forces', atoms)
+  File "/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/ase/calculators/calculator.py", line 737, in get_property
+    self.calculate(atoms, [name], system_changes)
+  File "/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/nequip/ase/nequip_calculator.py", line 118, in calculate
+    out = self.model(data)
+  File "/home/bingxing2/home/scx6d1j/.conda/envs/nequip-main/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+RuntimeError: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript (most recent call last):
+RuntimeError: Unsupported value kind: Tensor
+
