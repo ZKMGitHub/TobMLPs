@@ -1,0 +1,590 @@
+Tue Apr  2 15:45:55 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.104.12             Driver Version: 535.104.12   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A100-PCIE-40GB          On  | 00000000:81:00.0 Off |                    0 |
+| N/A   32C    P0              34W / 250W |      4MiB / 40960MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+/var/spool/slurmd/job189220/slurm_script: line 6: activate: No such file or directory
+gcc-9.3.0 loaded successful
+Currently Loaded Modulefiles:
+ 1) anaconda/2021.11      4) cudnn/8.4.0.27_cuda11.x       
+ 2) compilers/cuda/11.6   5) nccl/2.17.1-1_cuda11.6-alone  
+ 3) compilers/gcc/9.3.0  
+python: can't open file '/home/bingxing2/home/scx6d1j/ZKM/MLIP/GemNet/gemnet/configs/CSH/GemNet-T/medium_set/tob11/test_torch.py': [Errno 2] No such file or directory
+2024-04-02 15:46:10 (INFO): Start training
+2024-04-02 15:46:10 (INFO): Available GPUs: 1
+2024-04-02 15:46:10 (INFO): CUDA Available: True
+2024-04-02 15:46:10 (INFO): Directory: logs/20240402_154610_JL3HeU_tob11_gemnet.npz_GemNet
+2024-04-02 15:46:10 (INFO): Create directories
+2024-04-02 15:46:10 (INFO): Initialize model
+2024-04-02 15:46:35 (INFO): Load dataset
+2024-04-02 15:46:35 (INFO): Training data size: 450
+2024-04-02 15:46:35 (INFO): Validation data size: 50
+2024-04-02 15:46:35 (INFO): Test data size: 6500
+2024-04-02 15:46:35 (INFO): Prepare training
+2024-04-02 15:46:37 (INFO): Freshly initialize model
+2024-04-02 15:47:38 (INFO): 225/112500 (epoch 1): loss: train=2.341816, val=6.976168; energy_mae: train=90.959259, val=480.436218; force_mae: train=0.724739, val=1.083722; force_rmse: train=1.446689, val=2.193743
+2024-04-02 15:48:36 (INFO): 450/112500 (epoch 3): loss: train=0.979060, val=4.934837; energy_mae: train=16.684458, val=347.253906; force_mae: train=0.410230, val=0.731735; force_rmse: train=0.820419, val=1.477068
+2024-04-02 15:49:34 (INFO): 675/112500 (epoch 5): loss: train=0.850325, val=3.601213; energy_mae: train=12.640692, val=244.407669; force_mae: train=0.365566, val=0.581756; force_rmse: train=0.731231, val=1.168825
+2024-04-02 15:50:31 (INFO): 900/112500 (epoch 7): loss: train=0.760039, val=2.710834; energy_mae: train=7.987252, val=169.827988; force_mae: train=0.343213, val=0.510968; force_rmse: train=0.687037, val=1.022782
+2024-04-02 15:51:28 (INFO): 1125/112500 (epoch 9): loss: train=0.722196, val=2.087095; energy_mae: train=6.667629, val=117.953033; force_mae: train=0.330924, val=0.459287; force_rmse: train=0.662141, val=0.916732
+2024-04-02 15:52:24 (INFO): 1350/112500 (epoch 11): loss: train=0.723363, val=1.642719; energy_mae: train=8.299314, val=82.379074; force_mae: train=0.323153, val=0.415256; force_rmse: train=0.646838, val=0.827201
+2024-04-02 15:53:20 (INFO): 1575/112500 (epoch 13): loss: train=0.682060, val=1.329681; energy_mae: train=5.760742, val=57.818047; force_mae: train=0.315163, val=0.381147; force_rmse: train=0.630760, val=0.759092
+2024-04-02 15:54:16 (INFO): 1800/112500 (epoch 15): loss: train=0.657927, val=1.109241; energy_mae: train=5.071095, val=40.701576; force_mae: train=0.306598, val=0.355994; force_rmse: train=0.613350, val=0.709319
+2024-04-02 15:55:12 (INFO): 2025/112500 (epoch 17): loss: train=0.655766, val=0.957834; energy_mae: train=5.736547, val=28.965439; force_mae: train=0.302127, val=0.338670; force_rmse: train=0.604445, val=0.674929
+2024-04-02 15:56:08 (INFO): 2250/112500 (epoch 19): loss: train=0.640817, val=0.851232; energy_mae: train=5.530830, val=20.664213; force_mae: train=0.295766, val=0.326738; force_rmse: train=0.591423, val=0.651101
+2024-04-02 15:57:05 (INFO): 2475/112500 (epoch 21): loss: train=0.625967, val=0.775203; energy_mae: train=5.208381, val=14.751176; force_mae: train=0.289916, val=0.318301; force_rmse: train=0.579680, val=0.634032
+2024-04-02 15:58:03 (INFO): 2700/112500 (epoch 23): loss: train=0.605904, val=0.720393; energy_mae: train=4.067347, val=10.544037; force_mae: train=0.285667, val=0.311724; force_rmse: train=0.570939, val=0.621164
+2024-04-02 15:59:01 (INFO): 2925/112500 (epoch 25): loss: train=0.596216, val=0.678894; energy_mae: train=4.367889, val=7.363834; force_mae: train=0.279145, val=0.306892; force_rmse: train=0.558118, val=0.611369
+2024-04-02 15:59:59 (INFO): 3150/112500 (epoch 27): loss: train=0.586870, val=0.648782; energy_mae: train=4.414568, val=5.082599; force_mae: train=0.274047, val=0.303250; force_rmse: train=0.548206, val=0.603997
+2024-04-02 16:00:58 (INFO): 3375/112500 (epoch 29): loss: train=0.571080, val=0.626930; energy_mae: train=3.933570, val=3.442037; force_mae: train=0.268720, val=0.300531; force_rmse: train=0.537115, val=0.598495
+2024-04-02 16:01:56 (INFO): 3600/112500 (epoch 31): loss: train=0.563198, val=0.612741; energy_mae: train=3.143099, val=2.438757; force_mae: train=0.268870, val=0.298389; force_rmse: train=0.537138, val=0.594296
+2024-04-02 16:02:55 (INFO): 3825/112500 (epoch 33): loss: train=0.546916, val=0.603675; energy_mae: train=3.079521, val=1.829121; force_mae: train=0.260648, val=0.296781; force_rmse: train=0.521334, val=0.591297
+2024-04-02 16:03:53 (INFO): 4050/112500 (epoch 35): loss: train=0.538465, val=0.598958; energy_mae: train=3.884701, val=1.529741; force_mae: train=0.252351, val=0.295827; force_rmse: train=0.504665, val=0.589556
+2024-04-02 16:04:49 (INFO): 4275/112500 (epoch 37): loss: train=0.519884, val=0.596628; energy_mae: train=3.367903, val=1.404578; force_mae: train=0.245553, val=0.295303; force_rmse: train=0.491116, val=0.588467
+2024-04-02 16:05:48 (INFO): 4500/112500 (epoch 39): loss: train=0.504337, val=0.595461; energy_mae: train=2.956607, val=1.330096; force_mae: train=0.239904, val=0.295049; force_rmse: train=0.479567, val=0.588040
+2024-04-02 16:06:44 (INFO): 4725/112500 (epoch 41): loss: train=0.496177, val=0.595665; energy_mae: train=2.935949, val=1.322364; force_mae: train=0.235950, val=0.295191; force_rmse: train=0.471532, val=0.588325
+2024-04-02 16:07:42 (INFO): 4950/112500 (epoch 43): loss: train=0.482144, val=0.596707; energy_mae: train=2.555998, val=1.323881; force_mae: train=0.230657, val=0.295718; force_rmse: train=0.461196, val=0.589362
+2024-04-02 16:08:39 (INFO): 5175/112500 (epoch 45): loss: train=0.474093, val=0.597660; energy_mae: train=2.786951, val=1.321433; force_mae: train=0.225336, val=0.296310; force_rmse: train=0.450730, val=0.590349
+2024-04-02 16:09:37 (INFO): 5400/112500 (epoch 47): loss: train=0.461574, val=0.598861; energy_mae: train=2.224588, val=1.293013; force_mae: train=0.221847, val=0.297150; force_rmse: train=0.443765, val=0.591850
+2024-04-02 16:10:35 (INFO): 5625/112500 (epoch 49): loss: train=0.457738, val=0.600658; energy_mae: train=2.859724, val=1.297045; force_mae: train=0.216862, val=0.298211; force_rmse: train=0.433475, val=0.593624
+2024-04-02 16:11:32 (INFO): 5850/112500 (epoch 51): loss: train=0.450622, val=0.602431; energy_mae: train=2.832234, val=1.293955; force_mae: train=0.213256, val=0.299273; force_rmse: train=0.426565, val=0.595447
+2024-04-02 16:11:32 (INFO): Step 26: reducing on plateu by 0.5.
+2024-04-02 16:12:30 (INFO): 6075/112500 (epoch 53): loss: train=0.388575, val=0.604756; energy_mae: train=1.629145, val=1.236964; force_mae: train=0.187808, val=0.300910; force_rmse: train=0.376044, val=0.598370
+2024-04-02 16:13:28 (INFO): 6300/112500 (epoch 55): loss: train=0.365779, val=0.607747; energy_mae: train=1.751103, val=1.164335; force_mae: train=0.175545, val=0.302889; force_rmse: train=0.351785, val=0.602125
+2024-04-02 16:14:26 (INFO): 6525/112500 (epoch 57): loss: train=0.359406, val=0.611189; energy_mae: train=1.637385, val=1.091136; force_mae: train=0.172986, val=0.305057; force_rmse: train=0.346497, val=0.606341
+2024-04-02 16:15:25 (INFO): 6750/112500 (epoch 59): loss: train=0.351644, val=0.614778; energy_mae: train=1.249627, val=1.029072; force_mae: train=0.171023, val=0.307226; force_rmse: train=0.342573, val=0.610593
+2024-04-02 16:16:23 (INFO): 6975/112500 (epoch 61): loss: train=0.348553, val=0.618321; energy_mae: train=1.365784, val=0.980317; force_mae: train=0.168735, val=0.309244; force_rmse: train=0.338278, val=0.614664
+2024-04-02 16:17:21 (INFO): 7200/112500 (epoch 63): loss: train=0.343120, val=0.621970; energy_mae: train=1.323656, val=0.942379; force_mae: train=0.166200, val=0.311247; force_rmse: train=0.333216, val=0.618734
+2024-04-02 16:18:19 (INFO): 7425/112500 (epoch 65): loss: train=0.338139, val=0.625670; energy_mae: train=1.275879, val=0.917485; force_mae: train=0.163942, val=0.313100; force_rmse: train=0.328667, val=0.622722
+2024-04-02 16:19:17 (INFO): 7650/112500 (epoch 67): loss: train=0.338753, val=0.629014; energy_mae: train=1.667146, val=0.895767; force_mae: train=0.162390, val=0.314811; force_rmse: train=0.325335, val=0.626320
+2024-04-02 16:20:15 (INFO): 7875/112500 (epoch 69): loss: train=0.330187, val=0.632383; energy_mae: train=1.236851, val=0.886088; force_mae: train=0.160197, val=0.316459; force_rmse: train=0.321029, val=0.629820
+2024-04-02 16:21:13 (INFO): 8100/112500 (epoch 71): loss: train=0.329699, val=0.635366; energy_mae: train=1.457168, val=0.875292; force_mae: train=0.158834, val=0.317978; force_rmse: train=0.318311, val=0.632942
+2024-04-02 16:22:11 (INFO): 8325/112500 (epoch 73): loss: train=0.321436, val=0.638074; energy_mae: train=1.032681, val=0.845717; force_mae: train=0.156680, val=0.319485; force_rmse: train=0.314252, val=0.635977
+2024-04-02 16:22:11 (INFO): Step 37: reducing on plateu by 0.5.
+2024-04-02 16:23:08 (INFO): 8550/112500 (epoch 75): loss: train=0.284427, val=0.641320; energy_mae: train=0.760151, val=0.819701; force_mae: train=0.139379, val=0.321269; force_rmse: train=0.279622, val=0.639518
+2024-04-02 16:24:06 (INFO): 8775/112500 (epoch 77): loss: train=0.265572, val=0.645089; energy_mae: train=0.819425, val=0.785585; force_mae: train=0.129393, val=0.323315; force_rmse: train=0.259977, val=0.643670
+2024-04-02 16:25:04 (INFO): 9000/112500 (epoch 79): loss: train=0.263005, val=0.649216; energy_mae: train=0.821918, val=0.762863; force_mae: train=0.128232, val=0.325498; force_rmse: train=0.257359, val=0.648068
+2024-04-02 16:26:02 (INFO): 9225/112500 (epoch 81): loss: train=0.260569, val=0.653348; energy_mae: train=0.693173, val=0.736101; force_mae: train=0.127652, val=0.327692; force_rmse: train=0.256199, val=0.652512
+2024-04-02 16:27:00 (INFO): 9450/112500 (epoch 83): loss: train=0.258808, val=0.657252; energy_mae: train=0.860233, val=0.717845; force_mae: train=0.125993, val=0.329738; force_rmse: train=0.252733, val=0.656639
+2024-04-02 16:27:57 (INFO): 9675/112500 (epoch 85): loss: train=0.257585, val=0.660985; energy_mae: train=0.805835, val=0.708583; force_mae: train=0.125666, val=0.331648; force_rmse: train=0.252048, val=0.660504
+2024-04-02 16:28:55 (INFO): 9900/112500 (epoch 87): loss: train=0.254663, val=0.664325; energy_mae: train=0.678398, val=0.696410; force_mae: train=0.124771, val=0.333408; force_rmse: train=0.250383, val=0.664001
+2024-04-02 16:29:54 (INFO): 10125/112500 (epoch 89): loss: train=0.254645, val=0.667597; energy_mae: train=0.847945, val=0.684055; force_mae: train=0.123882, val=0.335117; force_rmse: train=0.248652, val=0.667431
+2024-04-02 16:30:52 (INFO): 10350/112500 (epoch 91): loss: train=0.250632, val=0.670497; energy_mae: train=0.594237, val=0.674325; force_mae: train=0.123245, val=0.336585; force_rmse: train=0.247161, val=0.670459
+2024-04-02 16:31:50 (INFO): 10575/112500 (epoch 93): loss: train=0.248953, val=0.673427; energy_mae: train=0.593006, val=0.662424; force_mae: train=0.122404, val=0.338126; force_rmse: train=0.245477, val=0.673539
+2024-04-02 16:32:48 (INFO): 10800/112500 (epoch 95): loss: train=0.249229, val=0.676169; energy_mae: train=0.734331, val=0.653856; force_mae: train=0.121690, val=0.339603; force_rmse: train=0.244329, val=0.676395
+2024-04-02 16:32:48 (INFO): Step 48: reducing on plateu by 0.5.
+2024-04-02 16:33:46 (INFO): 11025/112500 (epoch 97): loss: train=0.223544, val=0.679353; energy_mae: train=0.475200, val=0.640979; force_mae: train=0.110209, val=0.341321; force_rmse: train=0.221002, val=0.679740
+2024-04-02 16:34:44 (INFO): 11250/112500 (epoch 99): loss: train=0.209858, val=0.683076; energy_mae: train=0.502751, val=0.629597; force_mae: train=0.103076, val=0.343273; force_rmse: train=0.206899, val=0.683616
+2024-04-02 16:35:42 (INFO): 11475/112500 (epoch 101): loss: train=0.208238, val=0.686841; energy_mae: train=0.482255, val=0.624484; force_mae: train=0.102375, val=0.345194; force_rmse: train=0.205471, val=0.687471
+2024-04-02 16:36:40 (INFO): 11700/112500 (epoch 103): loss: train=0.206632, val=0.690479; energy_mae: train=0.575635, val=0.617103; force_mae: train=0.101099, val=0.347066; force_rmse: train=0.202904, val=0.691220
+2024-04-02 16:37:38 (INFO): 11925/112500 (epoch 105): loss: train=0.205312, val=0.693985; energy_mae: train=0.485577, val=0.608716; force_mae: train=0.100943, val=0.348861; force_rmse: train=0.202481, val=0.694846
+2024-04-02 16:38:36 (INFO): 12150/112500 (epoch 107): loss: train=0.203973, val=0.697334; energy_mae: train=0.359238, val=0.602036; force_mae: train=0.100828, val=0.350584; force_rmse: train=0.202404, val=0.698297
+2024-04-02 16:39:35 (INFO): 12375/112500 (epoch 109): loss: train=0.202728, val=0.700457; energy_mae: train=0.353919, val=0.596541; force_mae: train=0.100222, val=0.352184; force_rmse: train=0.201201, val=0.701507
+2024-04-02 16:40:33 (INFO): 12600/112500 (epoch 111): loss: train=0.202763, val=0.703446; energy_mae: train=0.441020, val=0.592871; force_mae: train=0.099920, val=0.353725; force_rmse: train=0.200356, val=0.704563
+2024-04-02 16:41:32 (INFO): 12825/112500 (epoch 113): loss: train=0.200827, val=0.706231; energy_mae: train=0.326453, val=0.587678; force_mae: train=0.099416, val=0.355158; force_rmse: train=0.199558, val=0.707428
+2024-04-02 16:42:30 (INFO): 13050/112500 (epoch 115): loss: train=0.202560, val=0.708925; energy_mae: train=0.508764, val=0.582794; force_mae: train=0.099439, val=0.356558; force_rmse: train=0.199467, val=0.710199
+2024-04-02 16:43:28 (INFO): 13275/112500 (epoch 117): loss: train=0.199134, val=0.711505; energy_mae: train=0.360001, val=0.576417; force_mae: train=0.098544, val=0.357872; force_rmse: train=0.197509, val=0.712870
+2024-04-02 16:43:28 (INFO): Step 59: reducing on plateu by 0.5.
+2024-04-02 16:44:26 (INFO): 13500/112500 (epoch 119): loss: train=0.183875, val=0.714232; energy_mae: train=0.289825, val=0.572587; force_mae: train=0.091020, val=0.359230; force_rmse: train=0.182805, val=0.715662
+2024-04-02 16:45:24 (INFO): 13725/112500 (epoch 121): loss: train=0.176339, val=0.717268; energy_mae: train=0.238814, val=0.568309; force_mae: train=0.087502, val=0.360766; force_rmse: train=0.175708, val=0.718772
+2024-04-02 16:46:23 (INFO): 13950/112500 (epoch 123): loss: train=0.174521, val=0.720393; energy_mae: train=0.282061, val=0.564973; force_mae: train=0.086266, val=0.362353; force_rmse: train=0.173435, val=0.721963
+2024-04-02 16:47:21 (INFO): 14175/112500 (epoch 125): loss: train=0.174745, val=0.723370; energy_mae: train=0.291500, val=0.562397; force_mae: train=0.086427, val=0.363878; force_rmse: train=0.173565, val=0.724996
+2024-04-02 16:48:19 (INFO): 14400/112500 (epoch 127): loss: train=0.172075, val=0.726243; energy_mae: train=0.246484, val=0.559417; force_mae: train=0.085297, val=0.365347; force_rmse: train=0.171323, val=0.727928
+2024-04-02 16:49:17 (INFO): 14625/112500 (epoch 129): loss: train=0.172312, val=0.729028; energy_mae: train=0.232906, val=0.556725; force_mae: train=0.085515, val=0.366747; force_rmse: train=0.171700, val=0.730769
+2024-04-02 16:50:16 (INFO): 14850/112500 (epoch 131): loss: train=0.172887, val=0.731651; energy_mae: train=0.279100, val=0.555637; force_mae: train=0.085489, val=0.368070; force_rmse: train=0.171815, val=0.733429
+2024-04-02 16:51:14 (INFO): 15075/112500 (epoch 133): loss: train=0.170917, val=0.734121; energy_mae: train=0.216786, val=0.554119; force_mae: train=0.084840, val=0.369314; force_rmse: train=0.170453, val=0.735940
+2024-04-02 16:52:12 (INFO): 15300/112500 (epoch 135): loss: train=0.169463, val=0.736483; energy_mae: train=0.205284, val=0.550648; force_mae: train=0.084201, val=0.370505; force_rmse: train=0.169101, val=0.738360
+2024-04-02 16:53:10 (INFO): 15525/112500 (epoch 137): loss: train=0.170563, val=0.738758; energy_mae: train=0.272507, val=0.547574; force_mae: train=0.084388, val=0.371661; force_rmse: train=0.169533, val=0.740689
+2024-04-02 16:54:08 (INFO): 15750/112500 (epoch 139): loss: train=0.169145, val=0.740833; energy_mae: train=0.204976, val=0.545193; force_mae: train=0.084004, val=0.372705; force_rmse: train=0.168783, val=0.742809
+2024-04-02 16:54:08 (INFO): Step 70: reducing on plateu by 0.5.
+2024-04-02 16:55:06 (INFO): 15975/112500 (epoch 141): loss: train=0.160735, val=0.743002; energy_mae: train=0.149586, val=0.543355; force_mae: train=0.080003, val=0.373809; force_rmse: train=0.160847, val=0.745019
+2024-04-02 16:56:02 (INFO): 16200/112500 (epoch 143): loss: train=0.156673, val=0.745347; energy_mae: train=0.145262, val=0.541973; force_mae: train=0.077882, val=0.374988; force_rmse: train=0.156788, val=0.747401
+2024-04-02 16:56:58 (INFO): 16425/112500 (epoch 145): loss: train=0.155648, val=0.747635; energy_mae: train=0.171740, val=0.541290; force_mae: train=0.077288, val=0.376138; force_rmse: train=0.155486, val=0.749719
+2024-04-02 16:57:56 (INFO): 16650/112500 (epoch 147): loss: train=0.154490, val=0.749811; energy_mae: train=0.143051, val=0.540366; force_mae: train=0.076838, val=0.377237; force_rmse: train=0.154605, val=0.751927
+2024-04-02 16:58:54 (INFO): 16875/112500 (epoch 149): loss: train=0.154132, val=0.751883; energy_mae: train=0.150835, val=0.538029; force_mae: train=0.076662, val=0.378292; force_rmse: train=0.154165, val=0.754043
+2024-04-02 16:59:52 (INFO): 17100/112500 (epoch 151): loss: train=0.153785, val=0.753811; energy_mae: train=0.135851, val=0.536232; force_mae: train=0.076410, val=0.379270; force_rmse: train=0.153966, val=0.756009
+2024-04-02 17:00:50 (INFO): 17325/112500 (epoch 153): loss: train=0.153762, val=0.755648; energy_mae: train=0.174050, val=0.534990; force_mae: train=0.076331, val=0.380202; force_rmse: train=0.153557, val=0.757877
+2024-04-02 17:01:48 (INFO): 17550/112500 (epoch 155): loss: train=0.153841, val=0.757401; energy_mae: train=0.139509, val=0.534120; force_mae: train=0.076497, val=0.381085; force_rmse: train=0.153986, val=0.759656
+2024-04-02 17:02:46 (INFO): 17775/112500 (epoch 157): loss: train=0.152035, val=0.759050; energy_mae: train=0.149722, val=0.533705; force_mae: train=0.075596, val=0.381922; force_rmse: train=0.152058, val=0.761326
+2024-04-02 17:03:44 (INFO): 18000/112500 (epoch 159): loss: train=0.152789, val=0.760597; energy_mae: train=0.174251, val=0.532017; force_mae: train=0.075736, val=0.382706; force_rmse: train=0.152572, val=0.762905
+2024-04-02 17:04:42 (INFO): 18225/112500 (epoch 161): loss: train=0.152503, val=0.762135; energy_mae: train=0.155712, val=0.531284; force_mae: train=0.075725, val=0.383480; force_rmse: train=0.152470, val=0.764467
+2024-04-02 17:04:42 (INFO): Step 81: reducing on plateu by 0.5.
+2024-04-02 17:05:41 (INFO): 18450/112500 (epoch 163): loss: train=0.148062, val=0.763647; energy_mae: train=0.106492, val=0.530616; force_mae: train=0.073749, val=0.384243; force_rmse: train=0.148482, val=0.766001
+2024-04-02 17:06:39 (INFO): 18675/112500 (epoch 165): loss: train=0.145589, val=0.765149; energy_mae: train=0.097338, val=0.530963; force_mae: train=0.072479, val=0.384994; force_rmse: train=0.146077, val=0.767515
+2024-04-02 17:07:37 (INFO): 18900/112500 (epoch 167): loss: train=0.145346, val=0.766588; energy_mae: train=0.112470, val=0.531188; force_mae: train=0.072258, val=0.385710; force_rmse: train=0.145678, val=0.768966
+2024-04-02 17:08:36 (INFO): 19125/112500 (epoch 169): loss: train=0.143042, val=0.767943; energy_mae: train=0.101786, val=0.531062; force_mae: train=0.071174, val=0.386389; force_rmse: train=0.143459, val=0.770336
+2024-04-02 17:09:34 (INFO): 19350/112500 (epoch 171): loss: train=0.145199, val=0.769195; energy_mae: train=0.110456, val=0.530266; force_mae: train=0.072221, val=0.387019; force_rmse: train=0.145550, val=0.771609
+2024-04-02 17:10:33 (INFO): 19575/112500 (epoch 173): loss: train=0.144111, val=0.770398; energy_mae: train=0.090976, val=0.530985; force_mae: train=0.071822, val=0.387617; force_rmse: train=0.144648, val=0.772817
+2024-04-02 17:11:31 (INFO): 19800/112500 (epoch 175): loss: train=0.143543, val=0.771526; energy_mae: train=0.089978, val=0.531013; force_mae: train=0.071484, val=0.388181; force_rmse: train=0.144084, val=0.773955
+2024-04-02 17:12:29 (INFO): 20025/112500 (epoch 177): loss: train=0.143984, val=0.772586; energy_mae: train=0.114650, val=0.530768; force_mae: train=0.071485, val=0.388714; force_rmse: train=0.144281, val=0.775029
+2024-04-02 17:13:28 (INFO): 20250/112500 (epoch 179): loss: train=0.143510, val=0.773611; energy_mae: train=0.104799, val=0.531216; force_mae: train=0.071383, val=0.389225; force_rmse: train=0.143901, val=0.776059
+2024-04-02 17:14:26 (INFO): 20475/112500 (epoch 181): loss: train=0.142887, val=0.774587; energy_mae: train=0.090265, val=0.531265; force_mae: train=0.071150, val=0.389711; force_rmse: train=0.143418, val=0.777045
+2024-04-02 17:15:24 (INFO): 20700/112500 (epoch 183): loss: train=0.142310, val=0.775532; energy_mae: train=0.089073, val=0.531870; force_mae: train=0.070842, val=0.390184; force_rmse: train=0.142848, val=0.777993
+2024-04-02 17:15:24 (INFO): Step 92: reducing on plateu by 0.5.
+2024-04-02 17:16:21 (INFO): 20925/112500 (epoch 185): loss: train=0.141534, val=0.776446; energy_mae: train=0.080657, val=0.532163; force_mae: train=0.070457, val=0.390641; force_rmse: train=0.142149, val=0.778914
+2024-04-02 17:17:18 (INFO): 21150/112500 (epoch 187): loss: train=0.138857, val=0.777343; energy_mae: train=0.075074, val=0.532440; force_mae: train=0.069152, val=0.391089; force_rmse: train=0.139502, val=0.779816
+2024-04-02 17:18:17 (INFO): 21375/112500 (epoch 189): loss: train=0.139771, val=0.778191; energy_mae: train=0.075045, val=0.532688; force_mae: train=0.069549, val=0.391512; force_rmse: train=0.140425, val=0.780670
+2024-04-02 17:19:15 (INFO): 21600/112500 (epoch 191): loss: train=0.139179, val=0.778975; energy_mae: train=0.072036, val=0.532463; force_mae: train=0.069353, val=0.391905; force_rmse: train=0.139858, val=0.781465
+2024-04-02 17:20:13 (INFO): 21825/112500 (epoch 193): loss: train=0.139546, val=0.779696; energy_mae: train=0.073973, val=0.532389; force_mae: train=0.069482, val=0.392265; force_rmse: train=0.140208, val=0.782194
+2024-04-02 17:21:11 (INFO): 22050/112500 (epoch 195): loss: train=0.138645, val=0.780367; energy_mae: train=0.070508, val=0.532799; force_mae: train=0.069029, val=0.392597; force_rmse: train=0.139334, val=0.782868
+2024-04-02 17:22:10 (INFO): 22275/112500 (epoch 197): loss: train=0.138942, val=0.781007; energy_mae: train=0.070447, val=0.533295; force_mae: train=0.069200, val=0.392917; force_rmse: train=0.139634, val=0.783509
+2024-04-02 17:23:09 (INFO): 22500/112500 (epoch 199): loss: train=0.138463, val=0.781612; energy_mae: train=0.073420, val=0.533721; force_mae: train=0.068900, val=0.393220; force_rmse: train=0.139120, val=0.784115
+2024-04-02 17:24:05 (INFO): 22725/112500 (epoch 201): loss: train=0.138910, val=0.782180; energy_mae: train=0.072677, val=0.533818; force_mae: train=0.069179, val=0.393506; force_rmse: train=0.139579, val=0.784689
+2024-04-02 17:25:02 (INFO): 22950/112500 (epoch 203): loss: train=0.137978, val=0.782730; energy_mae: train=0.065514, val=0.534260; force_mae: train=0.068726, val=0.393781; force_rmse: train=0.138710, val=0.785239
+2024-04-02 17:26:01 (INFO): 23175/112500 (epoch 205): loss: train=0.137815, val=0.783261; energy_mae: train=0.064514, val=0.534257; force_mae: train=0.068645, val=0.394049; force_rmse: train=0.138555, val=0.785777
+2024-04-02 17:26:01 (INFO): Step 103: reducing on plateu by 0.5.
+2024-04-02 17:26:59 (INFO): 23400/112500 (epoch 207): loss: train=0.137577, val=0.783775; energy_mae: train=0.059317, val=0.534416; force_mae: train=0.068544, val=0.394307; force_rmse: train=0.138368, val=0.786294
+2024-04-02 17:27:58 (INFO): 23625/112500 (epoch 209): loss: train=0.137022, val=0.784265; energy_mae: train=0.061082, val=0.534523; force_mae: train=0.068301, val=0.394551; force_rmse: train=0.137789, val=0.786787
+2024-04-02 17:28:56 (INFO): 23850/112500 (epoch 211): loss: train=0.136315, val=0.784723; energy_mae: train=0.059943, val=0.535230; force_mae: train=0.067873, val=0.394776; force_rmse: train=0.137086, val=0.787243
+2024-04-02 17:29:54 (INFO): 24075/112500 (epoch 213): loss: train=0.136270, val=0.785141; energy_mae: train=0.058467, val=0.535568; force_mae: train=0.067883, val=0.394983; force_rmse: train=0.137056, val=0.787662
+2024-04-02 17:30:53 (INFO): 24300/112500 (epoch 215): loss: train=0.136610, val=0.785530; energy_mae: train=0.059092, val=0.535664; force_mae: train=0.068036, val=0.395177; force_rmse: train=0.137393, val=0.788054
+2024-04-02 17:31:51 (INFO): 24525/112500 (epoch 217): loss: train=0.136674, val=0.785888; energy_mae: train=0.060745, val=0.536187; force_mae: train=0.068094, val=0.395353; force_rmse: train=0.137441, val=0.788411
+2024-04-02 17:32:50 (INFO): 24750/112500 (epoch 219): loss: train=0.135801, val=0.786227; energy_mae: train=0.056569, val=0.536481; force_mae: train=0.067640, val=0.395520; force_rmse: train=0.136601, val=0.788750
+2024-04-02 17:33:48 (INFO): 24975/112500 (epoch 221): loss: train=0.136200, val=0.786552; energy_mae: train=0.057208, val=0.536924; force_mae: train=0.067871, val=0.395680; force_rmse: train=0.136998, val=0.789074
+2024-04-02 17:34:47 (INFO): 25200/112500 (epoch 223): loss: train=0.136117, val=0.786857; energy_mae: train=0.055160, val=0.536991; force_mae: train=0.067815, val=0.395831; force_rmse: train=0.136935, val=0.789381
+2024-04-02 17:35:45 (INFO): 25425/112500 (epoch 225): loss: train=0.136133, val=0.787152; energy_mae: train=0.056862, val=0.537006; force_mae: train=0.067817, val=0.395978; force_rmse: train=0.136933, val=0.789679
+2024-04-02 17:36:43 (INFO): 25650/112500 (epoch 226): loss: train=0.135919, val=0.787424; energy_mae: train=0.054715, val=0.536718; force_mae: train=0.067718, val=0.396115; force_rmse: train=0.136739, val=0.789957
+2024-04-02 17:36:43 (INFO): Step 114: reducing on plateu by 0.5.
+2024-04-02 17:37:42 (INFO): 25875/112500 (epoch 228): loss: train=0.135385, val=0.787690; energy_mae: train=0.049627, val=0.536885; force_mae: train=0.067475, val=0.396247; force_rmse: train=0.136251, val=0.790223
+2024-04-02 17:38:40 (INFO): 26100/112500 (epoch 230): loss: train=0.135181, val=0.787943; energy_mae: train=0.050733, val=0.537111; force_mae: train=0.067353, val=0.396371; force_rmse: train=0.136034, val=0.790477
+2024-04-02 17:39:38 (INFO): 26325/112500 (epoch 232): loss: train=0.135470, val=0.788179; energy_mae: train=0.049154, val=0.537535; force_mae: train=0.067541, val=0.396486; force_rmse: train=0.136342, val=0.790711
+2024-04-02 17:40:37 (INFO): 26550/112500 (epoch 234): loss: train=0.134731, val=0.788395; energy_mae: train=0.050207, val=0.537627; force_mae: train=0.067134, val=0.396593; force_rmse: train=0.135584, val=0.790928
+2024-04-02 17:41:35 (INFO): 26775/112500 (epoch 236): loss: train=0.135361, val=0.788595; energy_mae: train=0.048632, val=0.537937; force_mae: train=0.067449, val=0.396690; force_rmse: train=0.136237, val=0.791127
+2024-04-02 17:42:34 (INFO): 27000/112500 (epoch 238): loss: train=0.134513, val=0.788777; energy_mae: train=0.049458, val=0.538223; force_mae: train=0.067030, val=0.396779; force_rmse: train=0.135372, val=0.791308
+2024-04-02 17:43:32 (INFO): 27225/112500 (epoch 240): loss: train=0.135261, val=0.788949; energy_mae: train=0.048370, val=0.538373; force_mae: train=0.067420, val=0.396863; force_rmse: train=0.136139, val=0.791480
+2024-04-02 17:44:31 (INFO): 27450/112500 (epoch 242): loss: train=0.134592, val=0.789107; energy_mae: train=0.048473, val=0.538059; force_mae: train=0.067077, val=0.396943; force_rmse: train=0.135462, val=0.791643
+2024-04-02 17:45:29 (INFO): 27675/112500 (epoch 244): loss: train=0.135541, val=0.789264; energy_mae: train=0.048273, val=0.538324; force_mae: train=0.067516, val=0.397020; force_rmse: train=0.136423, val=0.791799
+2024-04-02 17:46:28 (INFO): 27900/112500 (epoch 246): loss: train=0.134627, val=0.789411; energy_mae: train=0.048553, val=0.538472; force_mae: train=0.067089, val=0.397092; force_rmse: train=0.135496, val=0.791946
+2024-04-02 17:47:26 (INFO): 28125/112500 (epoch 248): loss: train=0.134662, val=0.789552; energy_mae: train=0.049433, val=0.538564; force_mae: train=0.067142, val=0.397162; force_rmse: train=0.135523, val=0.792087
+2024-04-02 17:47:26 (INFO): Step 125: reducing on plateu by 0.5.
+2024-04-02 17:48:24 (INFO): 28350/112500 (epoch 250): loss: train=0.134808, val=0.789689; energy_mae: train=0.042782, val=0.538867; force_mae: train=0.067197, val=0.397228; force_rmse: train=0.135737, val=0.792223
+2024-04-02 17:49:22 (INFO): 28575/112500 (epoch 252): loss: train=0.134231, val=0.789817; energy_mae: train=0.045375, val=0.538947; force_mae: train=0.066909, val=0.397290; force_rmse: train=0.135128, val=0.792351
+2024-04-02 17:50:21 (INFO): 28800/112500 (epoch 254): loss: train=0.134632, val=0.789934; energy_mae: train=0.042054, val=0.539098; force_mae: train=0.067120, val=0.397348; force_rmse: train=0.135567, val=0.792468
+2024-04-02 17:51:19 (INFO): 29025/112500 (epoch 256): loss: train=0.134348, val=0.790040; energy_mae: train=0.043790, val=0.538979; force_mae: train=0.066985, val=0.397400; force_rmse: train=0.135262, val=0.792576
+2024-04-02 17:52:17 (INFO): 29250/112500 (epoch 258): loss: train=0.134396, val=0.790139; energy_mae: train=0.045095, val=0.539189; force_mae: train=0.066948, val=0.397448; force_rmse: train=0.135298, val=0.792674
+2024-04-02 17:53:15 (INFO): 29475/112500 (epoch 260): loss: train=0.133555, val=0.790230; energy_mae: train=0.043886, val=0.539280; force_mae: train=0.066579, val=0.397493; force_rmse: train=0.134461, val=0.792765
+2024-04-02 17:54:14 (INFO): 29700/112500 (epoch 262): loss: train=0.135615, val=0.790315; energy_mae: train=0.044705, val=0.539204; force_mae: train=0.067624, val=0.397535; force_rmse: train=0.136534, val=0.792851
+2024-04-02 17:55:11 (INFO): 29925/112500 (epoch 264): loss: train=0.134112, val=0.790395; energy_mae: train=0.043346, val=0.539279; force_mae: train=0.066806, val=0.397574; force_rmse: train=0.135028, val=0.792931
+2024-04-02 17:56:08 (INFO): 30150/112500 (epoch 266): loss: train=0.133687, val=0.790471; energy_mae: train=0.041706, val=0.539244; force_mae: train=0.066664, val=0.397612; force_rmse: train=0.134616, val=0.793009
+2024-04-02 17:57:07 (INFO): 30375/112500 (epoch 268): loss: train=0.134662, val=0.790545; energy_mae: train=0.042930, val=0.539199; force_mae: train=0.067160, val=0.397648; force_rmse: train=0.135588, val=0.793084
+2024-04-02 17:58:05 (INFO): 30600/112500 (epoch 270): loss: train=0.133899, val=0.790617; energy_mae: train=0.043590, val=0.539398; force_mae: train=0.066700, val=0.397683; force_rmse: train=0.134812, val=0.793155
+2024-04-02 17:58:05 (INFO): Step 136: reducing on plateu by 0.5.
+2024-04-02 17:59:02 (INFO): 30825/112500 (epoch 272): loss: train=0.134116, val=0.790678; energy_mae: train=0.041605, val=0.539457; force_mae: train=0.066895, val=0.397712; force_rmse: train=0.135050, val=0.793216
+2024-04-02 17:59:59 (INFO): 31050/112500 (epoch 274): loss: train=0.134429, val=0.790739; energy_mae: train=0.042238, val=0.539659; force_mae: train=0.066988, val=0.397741; force_rmse: train=0.135360, val=0.793275
+2024-04-02 18:00:55 (INFO): 31275/112500 (epoch 276): loss: train=0.133806, val=0.790794; energy_mae: train=0.041467, val=0.539758; force_mae: train=0.066733, val=0.397768; force_rmse: train=0.134739, val=0.793329
+2024-04-02 18:01:53 (INFO): 31500/112500 (epoch 278): loss: train=0.134098, val=0.790846; energy_mae: train=0.040812, val=0.539921; force_mae: train=0.066823, val=0.397792; force_rmse: train=0.135040, val=0.793380
+2024-04-02 18:02:50 (INFO): 31725/112500 (epoch 280): loss: train=0.133995, val=0.790891; energy_mae: train=0.041793, val=0.539913; force_mae: train=0.066835, val=0.397815; force_rmse: train=0.134926, val=0.793426
+2024-04-02 18:03:47 (INFO): 31950/112500 (epoch 282): loss: train=0.133941, val=0.790936; energy_mae: train=0.039474, val=0.540072; force_mae: train=0.066816, val=0.397836; force_rmse: train=0.134895, val=0.793470
+2024-04-02 18:04:45 (INFO): 32175/112500 (epoch 284): loss: train=0.134439, val=0.790976; energy_mae: train=0.041151, val=0.540048; force_mae: train=0.066967, val=0.397856; force_rmse: train=0.135381, val=0.793511
+2024-04-02 18:05:43 (INFO): 32400/112500 (epoch 286): loss: train=0.133966, val=0.791013; energy_mae: train=0.041408, val=0.539943; force_mae: train=0.066813, val=0.397875; force_rmse: train=0.134901, val=0.793549
+2024-04-02 18:06:42 (INFO): 32625/112500 (epoch 288): loss: train=0.133946, val=0.791051; energy_mae: train=0.039893, val=0.539893; force_mae: train=0.066740, val=0.397894; force_rmse: train=0.134896, val=0.793588
+2024-04-02 18:07:40 (INFO): 32850/112500 (epoch 290): loss: train=0.133766, val=0.791087; energy_mae: train=0.042325, val=0.539965; force_mae: train=0.066734, val=0.397911; force_rmse: train=0.134689, val=0.793624
+2024-04-02 18:08:39 (INFO): 33075/112500 (epoch 292): loss: train=0.133309, val=0.791122; energy_mae: train=0.038521, val=0.540034; force_mae: train=0.066458, val=0.397928; force_rmse: train=0.134267, val=0.793658
+2024-04-02 18:08:39 (INFO): Step 147: reducing on plateu by 0.5.
+2024-04-02 18:09:38 (INFO): 33300/112500 (epoch 294): loss: train=0.134988, val=0.791149; energy_mae: train=0.040967, val=0.540143; force_mae: train=0.067295, val=0.397941; force_rmse: train=0.135938, val=0.793684
+2024-04-02 18:10:36 (INFO): 33525/112500 (epoch 296): loss: train=0.133046, val=0.791175; energy_mae: train=0.041637, val=0.540205; force_mae: train=0.066283, val=0.397953; force_rmse: train=0.133969, val=0.793710
+2024-04-02 18:11:34 (INFO): 33750/112500 (epoch 298): loss: train=0.134189, val=0.791200; energy_mae: train=0.039691, val=0.540277; force_mae: train=0.066973, val=0.397965; force_rmse: train=0.135144, val=0.793735
+2024-04-02 18:12:33 (INFO): 33975/112500 (epoch 300): loss: train=0.134183, val=0.791224; energy_mae: train=0.039297, val=0.540311; force_mae: train=0.066889, val=0.397977; force_rmse: train=0.135141, val=0.793759
+2024-04-02 18:13:31 (INFO): 34200/112500 (epoch 302): loss: train=0.132816, val=0.791245; energy_mae: train=0.042150, val=0.540320; force_mae: train=0.066197, val=0.397988; force_rmse: train=0.133732, val=0.793780
+2024-04-02 18:14:29 (INFO): 34425/112500 (epoch 304): loss: train=0.134668, val=0.791265; energy_mae: train=0.038396, val=0.540328; force_mae: train=0.067191, val=0.397997; force_rmse: train=0.135640, val=0.793800
+2024-04-02 18:15:27 (INFO): 34650/112500 (epoch 306): loss: train=0.133691, val=0.791284; energy_mae: train=0.037640, val=0.540369; force_mae: train=0.066634, val=0.398007; force_rmse: train=0.134661, val=0.793819
+2024-04-02 18:16:23 (INFO): 34875/112500 (epoch 308): loss: train=0.134163, val=0.791302; energy_mae: train=0.043103, val=0.540216; force_mae: train=0.066871, val=0.398016; force_rmse: train=0.135082, val=0.793838
+2024-04-02 18:17:20 (INFO): 35100/112500 (epoch 310): loss: train=0.133446, val=0.791319; energy_mae: train=0.037990, val=0.540306; force_mae: train=0.066558, val=0.398024; force_rmse: train=0.134410, val=0.793855
+2024-04-02 18:18:16 (INFO): 35325/112500 (epoch 312): loss: train=0.133874, val=0.791337; energy_mae: train=0.039423, val=0.540339; force_mae: train=0.066741, val=0.398033; force_rmse: train=0.134828, val=0.793872
+2024-04-02 18:19:12 (INFO): 35550/112500 (epoch 314): loss: train=0.133695, val=0.791354; energy_mae: train=0.040187, val=0.540425; force_mae: train=0.066710, val=0.398041; force_rmse: train=0.134640, val=0.793889
+2024-04-02 18:19:12 (INFO): Step 158: reducing on plateu by 0.5.
+2024-04-02 18:20:09 (INFO): 35775/112500 (epoch 316): loss: train=0.134100, val=0.791366; energy_mae: train=0.038574, val=0.540447; force_mae: train=0.066753, val=0.398046; force_rmse: train=0.135065, val=0.793900
+2024-04-02 18:21:08 (INFO): 36000/112500 (epoch 318): loss: train=0.133905, val=0.791376; energy_mae: train=0.040783, val=0.540444; force_mae: train=0.066792, val=0.398051; force_rmse: train=0.134846, val=0.793911
+2024-04-02 18:22:06 (INFO): 36225/112500 (epoch 320): loss: train=0.133740, val=0.791387; energy_mae: train=0.037164, val=0.540460; force_mae: train=0.066712, val=0.398057; force_rmse: train=0.134715, val=0.793922
+2024-04-02 18:23:04 (INFO): 36450/112500 (epoch 322): loss: train=0.133472, val=0.791398; energy_mae: train=0.039762, val=0.540498; force_mae: train=0.066531, val=0.398062; force_rmse: train=0.134418, val=0.793933
+2024-04-02 18:24:02 (INFO): 36675/112500 (epoch 324): loss: train=0.133902, val=0.791408; energy_mae: train=0.039209, val=0.540480; force_mae: train=0.066723, val=0.398067; force_rmse: train=0.134858, val=0.793943
+2024-04-02 18:25:00 (INFO): 36900/112500 (epoch 326): loss: train=0.134036, val=0.791416; energy_mae: train=0.039831, val=0.540454; force_mae: train=0.066893, val=0.398071; force_rmse: train=0.134988, val=0.793951
+2024-04-02 18:25:58 (INFO): 37125/112500 (epoch 328): loss: train=0.133188, val=0.791426; energy_mae: train=0.039460, val=0.540502; force_mae: train=0.066385, val=0.398076; force_rmse: train=0.134135, val=0.793961
+2024-04-02 18:26:55 (INFO): 37350/112500 (epoch 330): loss: train=0.133611, val=0.791435; energy_mae: train=0.037622, val=0.540536; force_mae: train=0.066631, val=0.398080; force_rmse: train=0.134580, val=0.793970
+2024-04-02 18:27:53 (INFO): 37575/112500 (epoch 332): loss: train=0.133346, val=0.791443; energy_mae: train=0.039432, val=0.540513; force_mae: train=0.066527, val=0.398084; force_rmse: train=0.134295, val=0.793978
+2024-04-02 18:28:50 (INFO): 37800/112500 (epoch 334): loss: train=0.134311, val=0.791452; energy_mae: train=0.040543, val=0.540511; force_mae: train=0.066897, val=0.398088; force_rmse: train=0.135258, val=0.793986
+2024-04-02 18:29:47 (INFO): 38025/112500 (epoch 336): loss: train=0.134075, val=0.791460; energy_mae: train=0.040302, val=0.540583; force_mae: train=0.066816, val=0.398092; force_rmse: train=0.135022, val=0.793994
+2024-04-02 18:29:47 (INFO): Step 169: reducing on plateu by 0.5.
+2024-04-02 18:30:44 (INFO): 38250/112500 (epoch 338): loss: train=0.134260, val=0.791464; energy_mae: train=0.036385, val=0.540608; force_mae: train=0.067008, val=0.398094; force_rmse: train=0.135248, val=0.793998
+2024-04-02 18:31:40 (INFO): 38475/112500 (epoch 340): loss: train=0.132802, val=0.791468; energy_mae: train=0.039887, val=0.540612; force_mae: train=0.066126, val=0.398096; force_rmse: train=0.133740, val=0.794002
+2024-04-02 18:32:37 (INFO): 38700/112500 (epoch 342): loss: train=0.133674, val=0.791473; energy_mae: train=0.039475, val=0.540593; force_mae: train=0.066705, val=0.398098; force_rmse: train=0.134626, val=0.794007
+2024-04-02 18:33:35 (INFO): 38925/112500 (epoch 344): loss: train=0.133579, val=0.791478; energy_mae: train=0.037179, val=0.540621; force_mae: train=0.066643, val=0.398101; force_rmse: train=0.134553, val=0.794012
+2024-04-02 18:34:33 (INFO): 39150/112500 (epoch 346): loss: train=0.133662, val=0.791482; energy_mae: train=0.039852, val=0.540616; force_mae: train=0.066622, val=0.398103; force_rmse: train=0.134610, val=0.794016
+2024-04-02 18:35:31 (INFO): 39375/112500 (epoch 348): loss: train=0.134165, val=0.791487; energy_mae: train=0.037742, val=0.540630; force_mae: train=0.066928, val=0.398105; force_rmse: train=0.135139, val=0.794021
+2024-04-02 18:36:28 (INFO): 39600/112500 (epoch 350): loss: train=0.134016, val=0.791491; energy_mae: train=0.039475, val=0.540682; force_mae: train=0.066774, val=0.398107; force_rmse: train=0.134971, val=0.794025
+2024-04-02 18:37:25 (INFO): 39825/112500 (epoch 352): loss: train=0.132933, val=0.791495; energy_mae: train=0.036387, val=0.540682; force_mae: train=0.066340, val=0.398109; force_rmse: train=0.133909, val=0.794029
+2024-04-02 18:38:22 (INFO): 40050/112500 (epoch 354): loss: train=0.134181, val=0.791499; energy_mae: train=0.040280, val=0.540695; force_mae: train=0.066835, val=0.398111; force_rmse: train=0.135129, val=0.794033
+2024-04-02 18:39:19 (INFO): 40275/112500 (epoch 356): loss: train=0.133029, val=0.791504; energy_mae: train=0.037045, val=0.540687; force_mae: train=0.066375, val=0.398113; force_rmse: train=0.133999, val=0.794037
+2024-04-02 18:40:17 (INFO): 40500/112500 (epoch 358): loss: train=0.133782, val=0.791508; energy_mae: train=0.040471, val=0.540719; force_mae: train=0.066705, val=0.398115; force_rmse: train=0.134725, val=0.794041
+2024-04-02 18:40:17 (INFO): Step 180: reducing on plateu by 0.5.
+2024-04-02 18:41:15 (INFO): 40725/112500 (epoch 360): loss: train=0.134390, val=0.791509; energy_mae: train=0.037529, val=0.540739; force_mae: train=0.066953, val=0.398115; force_rmse: train=0.135368, val=0.794042
+2024-04-02 18:42:13 (INFO): 40950/112500 (epoch 362): loss: train=0.133657, val=0.791511; energy_mae: train=0.038795, val=0.540732; force_mae: train=0.066670, val=0.398116; force_rmse: train=0.134615, val=0.794044
+2024-04-02 18:43:11 (INFO): 41175/112500 (epoch 364): loss: train=0.133286, val=0.791513; energy_mae: train=0.038738, val=0.540728; force_mae: train=0.066478, val=0.398117; force_rmse: train=0.134241, val=0.794046
+2024-04-02 18:44:08 (INFO): 41400/112500 (epoch 366): loss: train=0.134605, val=0.791515; energy_mae: train=0.038664, val=0.540753; force_mae: train=0.067099, val=0.398118; force_rmse: train=0.135574, val=0.794048
+2024-04-02 18:45:06 (INFO): 41625/112500 (epoch 368): loss: train=0.132193, val=0.791517; energy_mae: train=0.038052, val=0.540747; force_mae: train=0.065880, val=0.398119; force_rmse: train=0.133144, val=0.794050
+2024-04-02 18:46:02 (INFO): 41850/112500 (epoch 370): loss: train=0.134479, val=0.791518; energy_mae: train=0.039648, val=0.540730; force_mae: train=0.067048, val=0.398120; force_rmse: train=0.135437, val=0.794052
+2024-04-02 18:46:58 (INFO): 42075/112500 (epoch 372): loss: train=0.133602, val=0.791520; energy_mae: train=0.038788, val=0.540723; force_mae: train=0.066645, val=0.398121; force_rmse: train=0.134560, val=0.794053
+2024-04-02 18:47:54 (INFO): 42300/112500 (epoch 374): loss: train=0.133872, val=0.791522; energy_mae: train=0.036741, val=0.540720; force_mae: train=0.066736, val=0.398122; force_rmse: train=0.134853, val=0.794055
+2024-04-02 18:48:51 (INFO): 42525/112500 (epoch 376): loss: train=0.133434, val=0.791524; energy_mae: train=0.039990, val=0.540718; force_mae: train=0.066573, val=0.398123; force_rmse: train=0.134378, val=0.794057
+2024-04-02 18:49:49 (INFO): 42750/112500 (epoch 378): loss: train=0.133845, val=0.791526; energy_mae: train=0.039951, val=0.540743; force_mae: train=0.066747, val=0.398124; force_rmse: train=0.134794, val=0.794059
+2024-04-02 18:50:47 (INFO): 42975/112500 (epoch 380): loss: train=0.134476, val=0.791527; energy_mae: train=0.037616, val=0.540735; force_mae: train=0.067018, val=0.398124; force_rmse: train=0.135454, val=0.794061
+2024-04-02 18:50:47 (INFO): Step 191: reducing on plateu by 0.5.
+2024-04-02 18:51:43 (INFO): 43200/112500 (epoch 382): loss: train=0.133691, val=0.791528; energy_mae: train=0.039090, val=0.540742; force_mae: train=0.066693, val=0.398125; force_rmse: train=0.134646, val=0.794061
+2024-04-02 18:52:39 (INFO): 43425/112500 (epoch 384): loss: train=0.133230, val=0.791529; energy_mae: train=0.037470, val=0.540741; force_mae: train=0.066381, val=0.398125; force_rmse: train=0.134198, val=0.794062
+2024-04-02 18:53:36 (INFO): 43650/112500 (epoch 386): loss: train=0.132486, val=0.791529; energy_mae: train=0.038617, val=0.540745; force_mae: train=0.066100, val=0.398125; force_rmse: train=0.133434, val=0.794063
+2024-04-02 18:54:33 (INFO): 43875/112500 (epoch 388): loss: train=0.134069, val=0.791530; energy_mae: train=0.038189, val=0.540758; force_mae: train=0.066784, val=0.398126; force_rmse: train=0.135037, val=0.794063
+2024-04-02 18:55:32 (INFO): 44100/112500 (epoch 390): loss: train=0.134428, val=0.791531; energy_mae: train=0.039295, val=0.540745; force_mae: train=0.067068, val=0.398126; force_rmse: train=0.135389, val=0.794064
+2024-04-02 18:56:30 (INFO): 44325/112500 (epoch 392): loss: train=0.133673, val=0.791532; energy_mae: train=0.036914, val=0.540751; force_mae: train=0.066623, val=0.398126; force_rmse: train=0.134651, val=0.794065
+2024-04-02 18:57:28 (INFO): 44550/112500 (epoch 394): loss: train=0.133390, val=0.791532; energy_mae: train=0.039574, val=0.540751; force_mae: train=0.066563, val=0.398127; force_rmse: train=0.134337, val=0.794065
+2024-04-02 18:58:27 (INFO): 44775/112500 (epoch 396): loss: train=0.134404, val=0.791533; energy_mae: train=0.037359, val=0.540743; force_mae: train=0.067002, val=0.398127; force_rmse: train=0.135385, val=0.794066
+2024-04-02 18:59:27 (INFO): 45000/112500 (epoch 398): loss: train=0.133325, val=0.791534; energy_mae: train=0.038231, val=0.540751; force_mae: train=0.066486, val=0.398127; force_rmse: train=0.134285, val=0.794067
+2024-04-02 19:00:26 (INFO): 45225/112500 (epoch 400): loss: train=0.133462, val=0.791534; energy_mae: train=0.039759, val=0.540771; force_mae: train=0.066532, val=0.398128; force_rmse: train=0.134409, val=0.794067
+2024-04-02 19:01:25 (INFO): 45450/112500 (epoch 402): loss: train=0.134102, val=0.791535; energy_mae: train=0.038098, val=0.540765; force_mae: train=0.066857, val=0.398128; force_rmse: train=0.135071, val=0.794068
+2024-04-02 19:01:25 (INFO): Step 202: reducing on plateu by 0.5.
+2024-04-02 19:02:23 (INFO): 45675/112500 (epoch 404): loss: train=0.133289, val=0.791535; energy_mae: train=0.038607, val=0.540767; force_mae: train=0.066450, val=0.398128; force_rmse: train=0.134245, val=0.794068
+2024-04-02 19:03:22 (INFO): 45900/112500 (epoch 406): loss: train=0.132999, val=0.791535; energy_mae: train=0.038397, val=0.540768; force_mae: train=0.066351, val=0.398128; force_rmse: train=0.133955, val=0.794068
+2024-04-02 19:04:19 (INFO): 46125/112500 (epoch 408): loss: train=0.133784, val=0.791535; energy_mae: train=0.037926, val=0.540768; force_mae: train=0.066679, val=0.398128; force_rmse: train=0.134752, val=0.794069
+2024-04-02 19:05:16 (INFO): 46350/112500 (epoch 410): loss: train=0.133562, val=0.791536; energy_mae: train=0.039547, val=0.540770; force_mae: train=0.066624, val=0.398128; force_rmse: train=0.134512, val=0.794069
+2024-04-02 19:06:14 (INFO): 46575/112500 (epoch 412): loss: train=0.134482, val=0.791536; energy_mae: train=0.040082, val=0.540769; force_mae: train=0.067034, val=0.398128; force_rmse: train=0.135436, val=0.794069
+2024-04-02 19:07:11 (INFO): 46800/112500 (epoch 414): loss: train=0.133979, val=0.791536; energy_mae: train=0.035899, val=0.540778; force_mae: train=0.066797, val=0.398129; force_rmse: train=0.134970, val=0.794069
+2024-04-02 19:08:09 (INFO): 47025/112500 (epoch 416): loss: train=0.133158, val=0.791536; energy_mae: train=0.038799, val=0.540776; force_mae: train=0.066397, val=0.398129; force_rmse: train=0.134111, val=0.794069
+2024-04-02 19:09:08 (INFO): 47250/112500 (epoch 418): loss: train=0.133808, val=0.791537; energy_mae: train=0.038402, val=0.540771; force_mae: train=0.066779, val=0.398129; force_rmse: train=0.134772, val=0.794069
+2024-04-02 19:10:06 (INFO): 47475/112500 (epoch 420): loss: train=0.133430, val=0.791537; energy_mae: train=0.038423, val=0.540779; force_mae: train=0.066477, val=0.398129; force_rmse: train=0.134390, val=0.794070
+2024-04-02 19:11:04 (INFO): 47700/112500 (epoch 422): loss: train=0.133807, val=0.791537; energy_mae: train=0.038905, val=0.540775; force_mae: train=0.066715, val=0.398129; force_rmse: train=0.134765, val=0.794070
+2024-04-02 19:12:02 (INFO): 47925/112500 (epoch 424): loss: train=0.133933, val=0.791537; energy_mae: train=0.038295, val=0.540775; force_mae: train=0.066791, val=0.398129; force_rmse: train=0.134899, val=0.794070
+2024-04-02 19:12:02 (INFO): Step 213: reducing on plateu by 0.5.
+2024-04-02 19:13:01 (INFO): 48150/112500 (epoch 426): loss: train=0.133054, val=0.791537; energy_mae: train=0.038185, val=0.540771; force_mae: train=0.066327, val=0.398129; force_rmse: train=0.134012, val=0.794070
+2024-04-02 19:13:59 (INFO): 48375/112500 (epoch 428): loss: train=0.134175, val=0.791537; energy_mae: train=0.038977, val=0.540779; force_mae: train=0.066904, val=0.398129; force_rmse: train=0.135136, val=0.794070
+2024-04-02 19:14:56 (INFO): 48600/112500 (epoch 430): loss: train=0.134144, val=0.791537; energy_mae: train=0.037836, val=0.540781; force_mae: train=0.066905, val=0.398129; force_rmse: train=0.135117, val=0.794070
+2024-04-02 19:15:54 (INFO): 48825/112500 (epoch 432): loss: train=0.133203, val=0.791537; energy_mae: train=0.038700, val=0.540775; force_mae: train=0.066420, val=0.398129; force_rmse: train=0.134158, val=0.794070
+2024-04-02 19:16:52 (INFO): 49050/112500 (epoch 434): loss: train=0.133618, val=0.791537; energy_mae: train=0.039501, val=0.540786; force_mae: train=0.066611, val=0.398129; force_rmse: train=0.134569, val=0.794070
+2024-04-02 19:17:50 (INFO): 49275/112500 (epoch 436): loss: train=0.133937, val=0.791537; energy_mae: train=0.038240, val=0.540781; force_mae: train=0.066784, val=0.398129; force_rmse: train=0.134903, val=0.794070
+2024-04-02 19:18:48 (INFO): 49500/112500 (epoch 438): loss: train=0.133871, val=0.791537; energy_mae: train=0.037863, val=0.540776; force_mae: train=0.066744, val=0.398129; force_rmse: train=0.134841, val=0.794070
+2024-04-02 19:19:47 (INFO): 49725/112500 (epoch 440): loss: train=0.133234, val=0.791538; energy_mae: train=0.038036, val=0.540782; force_mae: train=0.066435, val=0.398129; force_rmse: train=0.134195, val=0.794070
+2024-04-02 19:20:45 (INFO): 49950/112500 (epoch 442): loss: train=0.133665, val=0.791538; energy_mae: train=0.038795, val=0.540785; force_mae: train=0.066635, val=0.398129; force_rmse: train=0.134623, val=0.794071
+2024-04-02 19:21:43 (INFO): 50175/112500 (epoch 444): loss: train=0.133462, val=0.791538; energy_mae: train=0.038159, val=0.540786; force_mae: train=0.066552, val=0.398129; force_rmse: train=0.134424, val=0.794070
+2024-04-02 19:22:41 (INFO): 50400/112500 (epoch 446): loss: train=0.133765, val=0.791538; energy_mae: train=0.038812, val=0.540780; force_mae: train=0.066699, val=0.398129; force_rmse: train=0.134724, val=0.794071
+2024-04-02 19:22:41 (INFO): Step 224: reducing on plateu by 0.5.
+2024-04-02 19:23:40 (INFO): 50625/112500 (epoch 448): loss: train=0.134126, val=0.791538; energy_mae: train=0.038103, val=0.540781; force_mae: train=0.066882, val=0.398129; force_rmse: train=0.135096, val=0.794071
+2024-04-02 19:24:37 (INFO): 50850/112500 (epoch 450): loss: train=0.133514, val=0.791538; energy_mae: train=0.038579, val=0.540786; force_mae: train=0.066562, val=0.398129; force_rmse: train=0.134473, val=0.794071
+2024-04-02 19:25:35 (INFO): 51075/112500 (epoch 451): loss: train=0.133643, val=0.791538; energy_mae: train=0.038464, val=0.540789; force_mae: train=0.066642, val=0.398129; force_rmse: train=0.134605, val=0.794071
+2024-04-02 19:26:32 (INFO): 51300/112500 (epoch 453): loss: train=0.133824, val=0.791538; energy_mae: train=0.038612, val=0.540790; force_mae: train=0.066720, val=0.398129; force_rmse: train=0.134785, val=0.794071
+2024-04-02 19:27:30 (INFO): 51525/112500 (epoch 455): loss: train=0.133441, val=0.791538; energy_mae: train=0.037920, val=0.540780; force_mae: train=0.066542, val=0.398129; force_rmse: train=0.134406, val=0.794071
+2024-04-02 19:28:28 (INFO): 51750/112500 (epoch 457): loss: train=0.133660, val=0.791538; energy_mae: train=0.039064, val=0.540791; force_mae: train=0.066638, val=0.398129; force_rmse: train=0.134615, val=0.794071
+2024-04-02 19:29:26 (INFO): 51975/112500 (epoch 459): loss: train=0.133761, val=0.791538; energy_mae: train=0.038112, val=0.540782; force_mae: train=0.066696, val=0.398129; force_rmse: train=0.134728, val=0.794071
+2024-04-02 19:30:24 (INFO): 52200/112500 (epoch 461): loss: train=0.134085, val=0.791538; energy_mae: train=0.038616, val=0.540781; force_mae: train=0.066864, val=0.398129; force_rmse: train=0.135049, val=0.794071
+2024-04-02 19:31:23 (INFO): 52425/112500 (epoch 463): loss: train=0.133228, val=0.791538; energy_mae: train=0.037946, val=0.540785; force_mae: train=0.066418, val=0.398129; force_rmse: train=0.134190, val=0.794071
+2024-04-02 19:32:22 (INFO): 52650/112500 (epoch 465): loss: train=0.133476, val=0.791538; energy_mae: train=0.038797, val=0.540791; force_mae: train=0.066557, val=0.398129; force_rmse: train=0.134433, val=0.794071
+2024-04-02 19:33:21 (INFO): 52875/112500 (epoch 467): loss: train=0.133440, val=0.791538; energy_mae: train=0.037745, val=0.540786; force_mae: train=0.066552, val=0.398129; force_rmse: train=0.134406, val=0.794071
+2024-04-02 19:33:21 (INFO): Step 235: reducing on plateu by 0.5.
+2024-04-02 19:34:19 (INFO): 53100/112500 (epoch 469): loss: train=0.134043, val=0.791538; energy_mae: train=0.039952, val=0.540790; force_mae: train=0.066828, val=0.398129; force_rmse: train=0.134993, val=0.794071
+2024-04-02 19:35:17 (INFO): 53325/112500 (epoch 471): loss: train=0.133868, val=0.791538; energy_mae: train=0.037874, val=0.540781; force_mae: train=0.066746, val=0.398129; force_rmse: train=0.134838, val=0.794071
+2024-04-02 19:36:15 (INFO): 53550/112500 (epoch 473): loss: train=0.133529, val=0.791538; energy_mae: train=0.038383, val=0.540792; force_mae: train=0.066538, val=0.398129; force_rmse: train=0.134490, val=0.794071
+2024-04-02 19:37:13 (INFO): 53775/112500 (epoch 475): loss: train=0.133862, val=0.791538; energy_mae: train=0.038109, val=0.540785; force_mae: train=0.066772, val=0.398129; force_rmse: train=0.134829, val=0.794071
+2024-04-02 19:38:12 (INFO): 54000/112500 (epoch 477): loss: train=0.132938, val=0.791538; energy_mae: train=0.039299, val=0.540787; force_mae: train=0.066328, val=0.398129; force_rmse: train=0.133883, val=0.794071
+2024-04-02 19:39:10 (INFO): 54225/112500 (epoch 479): loss: train=0.135117, val=0.791538; energy_mae: train=0.037530, val=0.540787; force_mae: train=0.067316, val=0.398129; force_rmse: train=0.136103, val=0.794071
+2024-04-02 19:40:08 (INFO): 54450/112500 (epoch 481): loss: train=0.133351, val=0.791538; energy_mae: train=0.039261, val=0.540791; force_mae: train=0.066536, val=0.398129; force_rmse: train=0.134302, val=0.794071
+2024-04-02 19:41:06 (INFO): 54675/112500 (epoch 483): loss: train=0.133397, val=0.791538; energy_mae: train=0.035607, val=0.540789; force_mae: train=0.066511, val=0.398129; force_rmse: train=0.134384, val=0.794071
+2024-04-02 19:42:04 (INFO): 54900/112500 (epoch 485): loss: train=0.133866, val=0.791538; energy_mae: train=0.040150, val=0.540787; force_mae: train=0.066704, val=0.398129; force_rmse: train=0.134812, val=0.794071
+2024-04-02 19:43:03 (INFO): 55125/112500 (epoch 487): loss: train=0.133061, val=0.791538; energy_mae: train=0.039160, val=0.540785; force_mae: train=0.066359, val=0.398129; force_rmse: train=0.134010, val=0.794071
+2024-04-02 19:44:01 (INFO): 55350/112500 (epoch 489): loss: train=0.134728, val=0.791538; energy_mae: train=0.036689, val=0.540785; force_mae: train=0.067190, val=0.398129; force_rmse: train=0.135718, val=0.794071
+2024-04-02 19:44:01 (INFO): Step 246: reducing on plateu by 0.5.
+2024-04-02 19:44:59 (INFO): 55575/112500 (epoch 491): loss: train=0.133009, val=0.791538; energy_mae: train=0.040337, val=0.540790; force_mae: train=0.066325, val=0.398129; force_rmse: train=0.133945, val=0.794071
+2024-04-02 19:45:57 (INFO): 55800/112500 (epoch 493): loss: train=0.134097, val=0.791538; energy_mae: train=0.038280, val=0.540792; force_mae: train=0.066900, val=0.398129; force_rmse: train=0.135065, val=0.794071
+2024-04-02 19:46:55 (INFO): 56025/112500 (epoch 495): loss: train=0.133031, val=0.791538; energy_mae: train=0.038320, val=0.540786; force_mae: train=0.066307, val=0.398129; force_rmse: train=0.133988, val=0.794071
+2024-04-02 19:47:54 (INFO): 56250/112500 (epoch 497): loss: train=0.134415, val=0.791538; energy_mae: train=0.037379, val=0.540790; force_mae: train=0.067006, val=0.398129; force_rmse: train=0.135396, val=0.794071
+2024-04-02 19:48:52 (INFO): 56475/112500 (epoch 499): loss: train=0.133547, val=0.791538; energy_mae: train=0.040571, val=0.540786; force_mae: train=0.066581, val=0.398129; force_rmse: train=0.134486, val=0.794071
+2024-04-02 19:49:50 (INFO): 56700/112500 (epoch 501): loss: train=0.132926, val=0.791538; energy_mae: train=0.035871, val=0.540789; force_mae: train=0.066273, val=0.398129; force_rmse: train=0.133907, val=0.794071
+2024-04-02 19:50:47 (INFO): 56925/112500 (epoch 503): loss: train=0.134070, val=0.791538; energy_mae: train=0.040306, val=0.540785; force_mae: train=0.066881, val=0.398129; force_rmse: train=0.135017, val=0.794071
+2024-04-02 19:51:44 (INFO): 57150/112500 (epoch 505): loss: train=0.134131, val=0.791538; energy_mae: train=0.037761, val=0.540793; force_mae: train=0.066852, val=0.398129; force_rmse: train=0.135104, val=0.794071
+2024-04-02 19:52:42 (INFO): 57375/112500 (epoch 507): loss: train=0.132898, val=0.791538; energy_mae: train=0.039412, val=0.540790; force_mae: train=0.066233, val=0.398129; force_rmse: train=0.133842, val=0.794071
+2024-04-02 19:53:38 (INFO): 57600/112500 (epoch 509): loss: train=0.133800, val=0.791538; energy_mae: train=0.035772, val=0.540785; force_mae: train=0.066767, val=0.398129; force_rmse: train=0.134791, val=0.794071
+2024-04-02 19:54:35 (INFO): 57825/112500 (epoch 511): loss: train=0.133461, val=0.791538; energy_mae: train=0.039390, val=0.540789; force_mae: train=0.066537, val=0.398129; force_rmse: train=0.134411, val=0.794071
+2024-04-02 19:54:35 (INFO): Step 257: reducing on plateu by 0.5.
+2024-04-02 19:55:33 (INFO): 58050/112500 (epoch 513): loss: train=0.133760, val=0.791538; energy_mae: train=0.038705, val=0.540793; force_mae: train=0.066665, val=0.398129; force_rmse: train=0.134720, val=0.794071
+2024-04-02 19:56:31 (INFO): 58275/112500 (epoch 515): loss: train=0.134419, val=0.791538; energy_mae: train=0.038703, val=0.540790; force_mae: train=0.067047, val=0.398129; force_rmse: train=0.135386, val=0.794071
+2024-04-02 19:57:29 (INFO): 58500/112500 (epoch 517): loss: train=0.134071, val=0.791538; energy_mae: train=0.038375, val=0.540790; force_mae: train=0.066828, val=0.398129; force_rmse: train=0.135037, val=0.794071
+2024-04-02 19:58:27 (INFO): 58725/112500 (epoch 519): loss: train=0.133151, val=0.791538; energy_mae: train=0.037619, val=0.540791; force_mae: train=0.066421, val=0.398129; force_rmse: train=0.134116, val=0.794071
+2024-04-02 19:59:25 (INFO): 58950/112500 (epoch 521): loss: train=0.134619, val=0.791538; energy_mae: train=0.038645, val=0.540787; force_mae: train=0.067108, val=0.398129; force_rmse: train=0.135589, val=0.794071
+2024-04-02 20:00:24 (INFO): 59175/112500 (epoch 523): loss: train=0.132457, val=0.791538; energy_mae: train=0.039574, val=0.540790; force_mae: train=0.066068, val=0.398129; force_rmse: train=0.133396, val=0.794071
+2024-04-02 20:01:22 (INFO): 59400/112500 (epoch 525): loss: train=0.133471, val=0.791538; energy_mae: train=0.037707, val=0.540787; force_mae: train=0.066538, val=0.398129; force_rmse: train=0.134438, val=0.794071
+2024-04-02 20:02:20 (INFO): 59625/112500 (epoch 527): loss: train=0.133764, val=0.791538; energy_mae: train=0.038751, val=0.540793; force_mae: train=0.066623, val=0.398129; force_rmse: train=0.134724, val=0.794071
+2024-04-02 20:03:19 (INFO): 59850/112500 (epoch 529): loss: train=0.134735, val=0.791538; energy_mae: train=0.039426, val=0.540787; force_mae: train=0.067276, val=0.398129; force_rmse: train=0.135698, val=0.794071
+2024-04-02 20:04:16 (INFO): 60075/112500 (epoch 531): loss: train=0.132948, val=0.791538; energy_mae: train=0.037598, val=0.540793; force_mae: train=0.066256, val=0.398129; force_rmse: train=0.133911, val=0.794071
+2024-04-02 20:05:15 (INFO): 60300/112500 (epoch 533): loss: train=0.132767, val=0.791538; energy_mae: train=0.037412, val=0.540792; force_mae: train=0.066197, val=0.398129; force_rmse: train=0.133730, val=0.794071
+2024-04-02 20:05:15 (INFO): Step 268: reducing on plateu by 0.5.
+2024-04-02 20:06:13 (INFO): 60525/112500 (epoch 535): loss: train=0.134913, val=0.791538; energy_mae: train=0.039609, val=0.540790; force_mae: train=0.067277, val=0.398129; force_rmse: train=0.135875, val=0.794071
+2024-04-02 20:07:11 (INFO): 60750/112500 (epoch 537): loss: train=0.133084, val=0.791538; energy_mae: train=0.038743, val=0.540791; force_mae: train=0.066352, val=0.398129; force_rmse: train=0.134037, val=0.794071
+2024-04-02 20:08:09 (INFO): 60975/112500 (epoch 539): loss: train=0.133407, val=0.791538; energy_mae: train=0.038035, val=0.540796; force_mae: train=0.066520, val=0.398129; force_rmse: train=0.134370, val=0.794071
+2024-04-02 20:09:07 (INFO): 61200/112500 (epoch 541): loss: train=0.134158, val=0.791538; energy_mae: train=0.038248, val=0.540795; force_mae: train=0.066958, val=0.398129; force_rmse: train=0.135126, val=0.794071
+2024-04-02 20:10:04 (INFO): 61425/112500 (epoch 543): loss: train=0.133541, val=0.791538; energy_mae: train=0.038980, val=0.540786; force_mae: train=0.066480, val=0.398129; force_rmse: train=0.134496, val=0.794071
+2024-04-02 20:11:02 (INFO): 61650/112500 (epoch 545): loss: train=0.133947, val=0.791538; energy_mae: train=0.038739, val=0.540792; force_mae: train=0.066802, val=0.398129; force_rmse: train=0.134909, val=0.794071
+2024-04-02 20:12:00 (INFO): 61875/112500 (epoch 547): loss: train=0.133621, val=0.791538; energy_mae: train=0.038748, val=0.540787; force_mae: train=0.066633, val=0.398129; force_rmse: train=0.134579, val=0.794071
+2024-04-02 20:12:59 (INFO): 62100/112500 (epoch 549): loss: train=0.133577, val=0.791538; energy_mae: train=0.038131, val=0.540786; force_mae: train=0.066688, val=0.398129; force_rmse: train=0.134541, val=0.794071
+2024-04-02 20:13:55 (INFO): 62325/112500 (epoch 551): loss: train=0.133046, val=0.791538; energy_mae: train=0.037895, val=0.540789; force_mae: train=0.066349, val=0.398129; force_rmse: train=0.134007, val=0.794071
+2024-04-02 20:14:53 (INFO): 62550/112500 (epoch 553): loss: train=0.135585, val=0.791538; energy_mae: train=0.037217, val=0.540791; force_mae: train=0.067533, val=0.398129; force_rmse: train=0.136579, val=0.794071
+2024-04-02 20:15:51 (INFO): 62775/112500 (epoch 555): loss: train=0.132870, val=0.791538; energy_mae: train=0.039386, val=0.540791; force_mae: train=0.066215, val=0.398129; force_rmse: train=0.133815, val=0.794071
+2024-04-02 20:15:51 (INFO): Step 279: reducing on plateu by 0.5.
+2024-04-02 20:16:49 (INFO): 63000/112500 (epoch 557): loss: train=0.133157, val=0.791538; energy_mae: train=0.039122, val=0.540789; force_mae: train=0.066438, val=0.398129; force_rmse: train=0.134107, val=0.794071
+2024-04-02 20:17:47 (INFO): 63225/112500 (epoch 559): loss: train=0.133769, val=0.791538; energy_mae: train=0.039377, val=0.540792; force_mae: train=0.066687, val=0.398129; force_rmse: train=0.134722, val=0.794071
+2024-04-02 20:18:45 (INFO): 63450/112500 (epoch 561): loss: train=0.132819, val=0.791538; energy_mae: train=0.038210, val=0.540786; force_mae: train=0.066186, val=0.398129; force_rmse: train=0.133774, val=0.794071
+2024-04-02 20:19:44 (INFO): 63675/112500 (epoch 563): loss: train=0.134359, val=0.791538; energy_mae: train=0.038322, val=0.540786; force_mae: train=0.067059, val=0.398129; force_rmse: train=0.135329, val=0.794071
+2024-04-02 20:20:42 (INFO): 63900/112500 (epoch 565): loss: train=0.134219, val=0.791538; energy_mae: train=0.038099, val=0.540790; force_mae: train=0.066868, val=0.398129; force_rmse: train=0.135190, val=0.794071
+2024-04-02 20:21:41 (INFO): 64125/112500 (epoch 567): loss: train=0.133912, val=0.791538; energy_mae: train=0.038651, val=0.540792; force_mae: train=0.066767, val=0.398129; force_rmse: train=0.134874, val=0.794071
+2024-04-02 20:22:39 (INFO): 64350/112500 (epoch 569): loss: train=0.133057, val=0.791538; energy_mae: train=0.036796, val=0.540787; force_mae: train=0.066363, val=0.398129; force_rmse: train=0.134030, val=0.794071
+2024-04-02 20:23:36 (INFO): 64575/112500 (epoch 571): loss: train=0.133899, val=0.791538; energy_mae: train=0.038120, val=0.540791; force_mae: train=0.066765, val=0.398129; force_rmse: train=0.134867, val=0.794071
+2024-04-02 20:24:32 (INFO): 64800/112500 (epoch 573): loss: train=0.132965, val=0.791538; energy_mae: train=0.039951, val=0.540791; force_mae: train=0.066334, val=0.398129; force_rmse: train=0.133904, val=0.794071
+2024-04-02 20:25:29 (INFO): 65025/112500 (epoch 575): loss: train=0.133460, val=0.791538; energy_mae: train=0.036372, val=0.540784; force_mae: train=0.066529, val=0.398129; force_rmse: train=0.134441, val=0.794071
+2024-04-02 20:26:25 (INFO): 65250/112500 (epoch 577): loss: train=0.134368, val=0.791538; energy_mae: train=0.039040, val=0.540796; force_mae: train=0.066988, val=0.398129; force_rmse: train=0.135331, val=0.794071
+2024-04-02 20:26:25 (INFO): Step 290: reducing on plateu by 0.5.
+2024-04-02 20:27:21 (INFO): 65475/112500 (epoch 579): loss: train=0.134553, val=0.791538; energy_mae: train=0.038508, val=0.540793; force_mae: train=0.067073, val=0.398129; force_rmse: train=0.135523, val=0.794071
+2024-04-02 20:28:17 (INFO): 65700/112500 (epoch 581): loss: train=0.132434, val=0.791538; energy_mae: train=0.039191, val=0.540786; force_mae: train=0.066067, val=0.398129; force_rmse: train=0.133376, val=0.794071
+2024-04-02 20:29:15 (INFO): 65925/112500 (epoch 583): loss: train=0.134291, val=0.791538; energy_mae: train=0.037927, val=0.540791; force_mae: train=0.066941, val=0.398129; force_rmse: train=0.135264, val=0.794071
+2024-04-02 20:30:13 (INFO): 66150/112500 (epoch 585): loss: train=0.133643, val=0.791538; energy_mae: train=0.039153, val=0.540787; force_mae: train=0.066638, val=0.398129; force_rmse: train=0.134598, val=0.794071
+2024-04-02 20:31:11 (INFO): 66375/112500 (epoch 587): loss: train=0.133335, val=0.791538; energy_mae: train=0.038323, val=0.540790; force_mae: train=0.066440, val=0.398129; force_rmse: train=0.134295, val=0.794071
+2024-04-02 20:32:09 (INFO): 66600/112500 (epoch 589): loss: train=0.133499, val=0.791538; energy_mae: train=0.038209, val=0.540791; force_mae: train=0.066604, val=0.398129; force_rmse: train=0.134462, val=0.794071
+2024-04-02 20:33:07 (INFO): 66825/112500 (epoch 591): loss: train=0.133731, val=0.791538; energy_mae: train=0.040191, val=0.540791; force_mae: train=0.066654, val=0.398129; force_rmse: train=0.134676, val=0.794071
+2024-04-02 20:34:05 (INFO): 67050/112500 (epoch 593): loss: train=0.134226, val=0.791538; energy_mae: train=0.037161, val=0.540791; force_mae: train=0.066985, val=0.398129; force_rmse: train=0.135207, val=0.794071
+2024-04-02 20:35:04 (INFO): 67275/112500 (epoch 595): loss: train=0.133945, val=0.791538; energy_mae: train=0.037613, val=0.540791; force_mae: train=0.066756, val=0.398129; force_rmse: train=0.134918, val=0.794071
+2024-04-02 20:36:02 (INFO): 67500/112500 (epoch 597): loss: train=0.132670, val=0.791538; energy_mae: train=0.037972, val=0.540792; force_mae: train=0.066124, val=0.398129; force_rmse: train=0.133627, val=0.794071
+2024-04-02 20:37:00 (INFO): 67725/112500 (epoch 599): loss: train=0.134621, val=0.791538; energy_mae: train=0.040074, val=0.540793; force_mae: train=0.067137, val=0.398129; force_rmse: train=0.135576, val=0.794071
+2024-04-02 20:37:00 (INFO): Step 301: reducing on plateu by 0.5.
+2024-04-02 20:37:58 (INFO): 67950/112500 (epoch 601): loss: train=0.133139, val=0.791538; energy_mae: train=0.037704, val=0.540790; force_mae: train=0.066379, val=0.398129; force_rmse: train=0.134103, val=0.794071
+2024-04-02 20:38:56 (INFO): 68175/112500 (epoch 603): loss: train=0.133042, val=0.791538; energy_mae: train=0.039115, val=0.540796; force_mae: train=0.066360, val=0.398129; force_rmse: train=0.133991, val=0.794071
+2024-04-02 20:39:54 (INFO): 68400/112500 (epoch 605): loss: train=0.134329, val=0.791538; energy_mae: train=0.037272, val=0.540789; force_mae: train=0.066972, val=0.398129; force_rmse: train=0.135310, val=0.794071
+2024-04-02 20:40:52 (INFO): 68625/112500 (epoch 607): loss: train=0.133942, val=0.791538; energy_mae: train=0.038354, val=0.540789; force_mae: train=0.066801, val=0.398129; force_rmse: train=0.134908, val=0.794071
+2024-04-02 20:41:50 (INFO): 68850/112500 (epoch 609): loss: train=0.133578, val=0.791538; energy_mae: train=0.038874, val=0.540791; force_mae: train=0.066576, val=0.398129; force_rmse: train=0.134535, val=0.794071
+2024-04-02 20:42:49 (INFO): 69075/112500 (epoch 611): loss: train=0.132627, val=0.791538; energy_mae: train=0.039270, val=0.540790; force_mae: train=0.066137, val=0.398129; force_rmse: train=0.133570, val=0.794071
+2024-04-02 20:43:46 (INFO): 69300/112500 (epoch 613): loss: train=0.134739, val=0.791538; energy_mae: train=0.038504, val=0.540793; force_mae: train=0.067175, val=0.398129; force_rmse: train=0.135711, val=0.794071
+2024-04-02 20:44:44 (INFO): 69525/112500 (epoch 615): loss: train=0.135447, val=0.791538; energy_mae: train=0.039489, val=0.540787; force_mae: train=0.067514, val=0.398129; force_rmse: train=0.136416, val=0.794071
+2024-04-02 20:45:41 (INFO): 69750/112500 (epoch 617): loss: train=0.132149, val=0.791538; energy_mae: train=0.037135, val=0.540797; force_mae: train=0.065944, val=0.398129; force_rmse: train=0.133108, val=0.794071
+2024-04-02 20:46:38 (INFO): 69975/112500 (epoch 619): loss: train=0.133490, val=0.791538; energy_mae: train=0.038224, val=0.540789; force_mae: train=0.066577, val=0.398129; force_rmse: train=0.134452, val=0.794071
+2024-04-02 20:47:35 (INFO): 70200/112500 (epoch 621): loss: train=0.132259, val=0.791538; energy_mae: train=0.039700, val=0.540785; force_mae: train=0.065873, val=0.398129; force_rmse: train=0.133193, val=0.794071
+2024-04-02 20:47:35 (INFO): Step 312: reducing on plateu by 0.5.
+2024-04-02 20:48:33 (INFO): 70425/112500 (epoch 623): loss: train=0.135461, val=0.791538; energy_mae: train=0.037370, val=0.540789; force_mae: train=0.067568, val=0.398129; force_rmse: train=0.136452, val=0.794071
+2024-04-02 20:49:31 (INFO): 70650/112500 (epoch 625): loss: train=0.133978, val=0.791538; energy_mae: train=0.038264, val=0.540796; force_mae: train=0.066826, val=0.398129; force_rmse: train=0.134944, val=0.794071
+2024-04-02 20:50:28 (INFO): 70875/112500 (epoch 627): loss: train=0.133128, val=0.791538; energy_mae: train=0.039415, val=0.540789; force_mae: train=0.066406, val=0.398129; force_rmse: train=0.134074, val=0.794071
+2024-04-02 20:51:26 (INFO): 71100/112500 (epoch 629): loss: train=0.133447, val=0.791538; energy_mae: train=0.037413, val=0.540784; force_mae: train=0.066496, val=0.398129; force_rmse: train=0.134417, val=0.794071
+2024-04-02 20:52:25 (INFO): 71325/112500 (epoch 631): loss: train=0.134168, val=0.791538; energy_mae: train=0.036754, val=0.540785; force_mae: train=0.066930, val=0.398129; force_rmse: train=0.135152, val=0.794071
+2024-04-02 20:53:23 (INFO): 71550/112500 (epoch 633): loss: train=0.132980, val=0.791538; energy_mae: train=0.039413, val=0.540791; force_mae: train=0.066307, val=0.398129; force_rmse: train=0.133925, val=0.794071
+2024-04-02 20:54:19 (INFO): 71775/112500 (epoch 635): loss: train=0.134081, val=0.791538; energy_mae: train=0.038833, val=0.540791; force_mae: train=0.066851, val=0.398129; force_rmse: train=0.135043, val=0.794071
+2024-04-02 20:55:15 (INFO): 72000/112500 (epoch 637): loss: train=0.134118, val=0.791538; energy_mae: train=0.038757, val=0.540791; force_mae: train=0.066846, val=0.398129; force_rmse: train=0.135081, val=0.794071
+2024-04-02 20:56:11 (INFO): 72225/112500 (epoch 639): loss: train=0.133816, val=0.791538; energy_mae: train=0.037594, val=0.540792; force_mae: train=0.066743, val=0.398129; force_rmse: train=0.134788, val=0.794071
+2024-04-02 20:57:07 (INFO): 72450/112500 (epoch 641): loss: train=0.132967, val=0.791538; energy_mae: train=0.038631, val=0.540793; force_mae: train=0.066267, val=0.398129; force_rmse: train=0.133920, val=0.794071
+2024-04-02 20:58:03 (INFO): 72675/112500 (epoch 643): loss: train=0.133681, val=0.791538; energy_mae: train=0.039564, val=0.540786; force_mae: train=0.066673, val=0.398129; force_rmse: train=0.134632, val=0.794071
+2024-04-02 20:58:03 (INFO): Step 323: reducing on plateu by 0.5.
+2024-04-02 20:58:59 (INFO): 72900/112500 (epoch 645): loss: train=0.133822, val=0.791538; energy_mae: train=0.038394, val=0.540795; force_mae: train=0.066742, val=0.398129; force_rmse: train=0.134786, val=0.794071
+2024-04-02 20:59:57 (INFO): 73125/112500 (epoch 647): loss: train=0.133253, val=0.791538; energy_mae: train=0.037300, val=0.540791; force_mae: train=0.066451, val=0.398129; force_rmse: train=0.134223, val=0.794071
+2024-04-02 21:00:56 (INFO): 73350/112500 (epoch 649): loss: train=0.134205, val=0.791538; energy_mae: train=0.038089, val=0.540781; force_mae: train=0.066913, val=0.398129; force_rmse: train=0.135176, val=0.794071
+2024-04-02 21:01:54 (INFO): 73575/112500 (epoch 651): loss: train=0.133271, val=0.791538; energy_mae: train=0.039728, val=0.540787; force_mae: train=0.066408, val=0.398129; force_rmse: train=0.134216, val=0.794071
+2024-04-02 21:02:52 (INFO): 73800/112500 (epoch 653): loss: train=0.133995, val=0.791538; energy_mae: train=0.038307, val=0.540795; force_mae: train=0.066828, val=0.398129; force_rmse: train=0.134961, val=0.794071
+2024-04-02 21:03:50 (INFO): 74025/112500 (epoch 655): loss: train=0.133881, val=0.791538; energy_mae: train=0.037738, val=0.540792; force_mae: train=0.066745, val=0.398129; force_rmse: train=0.134852, val=0.794071
+2024-04-02 21:04:46 (INFO): 74250/112500 (epoch 657): loss: train=0.133583, val=0.791538; energy_mae: train=0.038590, val=0.540792; force_mae: train=0.066607, val=0.398129; force_rmse: train=0.134543, val=0.794071
+2024-04-02 21:05:42 (INFO): 74475/112500 (epoch 659): loss: train=0.133673, val=0.791538; energy_mae: train=0.038382, val=0.540787; force_mae: train=0.066674, val=0.398129; force_rmse: train=0.134635, val=0.794071
+2024-04-02 21:06:38 (INFO): 74700/112500 (epoch 661): loss: train=0.133596, val=0.791538; energy_mae: train=0.038778, val=0.540792; force_mae: train=0.066599, val=0.398129; force_rmse: train=0.134554, val=0.794071
+2024-04-02 21:07:35 (INFO): 74925/112500 (epoch 663): loss: train=0.133666, val=0.791538; energy_mae: train=0.038056, val=0.540787; force_mae: train=0.066659, val=0.398129; force_rmse: train=0.134631, val=0.794071
+2024-04-02 21:08:33 (INFO): 75150/112500 (epoch 665): loss: train=0.133583, val=0.791538; energy_mae: train=0.039510, val=0.540792; force_mae: train=0.066622, val=0.398129; force_rmse: train=0.134533, val=0.794071
+2024-04-02 21:08:33 (INFO): Step 334: reducing on plateu by 0.5.
+2024-04-02 21:09:31 (INFO): 75375/112500 (epoch 667): loss: train=0.133613, val=0.791538; energy_mae: train=0.037930, val=0.540789; force_mae: train=0.066608, val=0.398129; force_rmse: train=0.134580, val=0.794071
+2024-04-02 21:10:28 (INFO): 75600/112500 (epoch 669): loss: train=0.133953, val=0.791538; energy_mae: train=0.038052, val=0.540786; force_mae: train=0.066775, val=0.398129; force_rmse: train=0.134921, val=0.794071
+2024-04-02 21:11:26 (INFO): 75825/112500 (epoch 671): loss: train=0.133557, val=0.791538; energy_mae: train=0.039654, val=0.540789; force_mae: train=0.066594, val=0.398129; force_rmse: train=0.134506, val=0.794071
+2024-04-02 21:12:23 (INFO): 76050/112500 (epoch 673): loss: train=0.133668, val=0.791538; energy_mae: train=0.037399, val=0.540786; force_mae: train=0.066655, val=0.398129; force_rmse: train=0.134641, val=0.794071
+2024-04-02 21:13:19 (INFO): 76275/112500 (epoch 675): loss: train=0.133723, val=0.791538; energy_mae: train=0.038496, val=0.540791; force_mae: train=0.066675, val=0.398129; force_rmse: train=0.134685, val=0.794071
+2024-04-02 21:14:17 (INFO): 76500/112500 (epoch 676): loss: train=0.133755, val=0.791538; energy_mae: train=0.038474, val=0.540787; force_mae: train=0.066691, val=0.398129; force_rmse: train=0.134718, val=0.794071
+2024-04-02 21:15:14 (INFO): 76725/112500 (epoch 678): loss: train=0.133661, val=0.791538; energy_mae: train=0.038570, val=0.540800; force_mae: train=0.066648, val=0.398129; force_rmse: train=0.134622, val=0.794071
+2024-04-02 21:16:10 (INFO): 76950/112500 (epoch 680): loss: train=0.133363, val=0.791538; energy_mae: train=0.038175, val=0.540790; force_mae: train=0.066513, val=0.398129; force_rmse: train=0.134325, val=0.794071
+2024-04-02 21:17:08 (INFO): 77175/112500 (epoch 682): loss: train=0.134040, val=0.791538; energy_mae: train=0.038893, val=0.540789; force_mae: train=0.066818, val=0.398129; force_rmse: train=0.135001, val=0.794071
+2024-04-02 21:18:06 (INFO): 77400/112500 (epoch 684): loss: train=0.133802, val=0.791538; energy_mae: train=0.037737, val=0.540793; force_mae: train=0.066708, val=0.398129; force_rmse: train=0.134772, val=0.794071
+2024-04-02 21:19:05 (INFO): 77625/112500 (epoch 686): loss: train=0.133503, val=0.791538; energy_mae: train=0.038912, val=0.540792; force_mae: train=0.066566, val=0.398129; force_rmse: train=0.134458, val=0.794071
+2024-04-02 21:19:05 (INFO): Step 345: reducing on plateu by 0.5.
+2024-04-02 21:20:03 (INFO): 77850/112500 (epoch 688): loss: train=0.133708, val=0.791538; energy_mae: train=0.037556, val=0.540789; force_mae: train=0.066694, val=0.398129; force_rmse: train=0.134679, val=0.794071
+2024-04-02 21:20:59 (INFO): 78075/112500 (epoch 690): loss: train=0.133770, val=0.791538; energy_mae: train=0.039657, val=0.540792; force_mae: train=0.066670, val=0.398129; force_rmse: train=0.134720, val=0.794071
+2024-04-02 21:21:56 (INFO): 78300/112500 (epoch 692): loss: train=0.133490, val=0.791538; energy_mae: train=0.037360, val=0.540785; force_mae: train=0.066578, val=0.398129; force_rmse: train=0.134461, val=0.794071
+2024-04-02 21:22:52 (INFO): 78525/112500 (epoch 694): loss: train=0.134392, val=0.791538; energy_mae: train=0.039457, val=0.540787; force_mae: train=0.067005, val=0.398129; force_rmse: train=0.135351, val=0.794071
+2024-04-02 21:23:48 (INFO): 78750/112500 (epoch 696): loss: train=0.133046, val=0.791538; energy_mae: train=0.038658, val=0.540789; force_mae: train=0.066335, val=0.398129; force_rmse: train=0.133999, val=0.794071
+2024-04-02 21:24:45 (INFO): 78975/112500 (epoch 698): loss: train=0.132994, val=0.791538; energy_mae: train=0.038109, val=0.540791; force_mae: train=0.066327, val=0.398129; force_rmse: train=0.133953, val=0.794071
+2024-04-02 21:25:44 (INFO): 79200/112500 (epoch 700): loss: train=0.134635, val=0.791538; energy_mae: train=0.038488, val=0.540790; force_mae: train=0.067129, val=0.398129; force_rmse: train=0.135606, val=0.794071
+2024-04-02 21:26:42 (INFO): 79425/112500 (epoch 702): loss: train=0.133230, val=0.791538; energy_mae: train=0.038432, val=0.540796; force_mae: train=0.066420, val=0.398129; force_rmse: train=0.134187, val=0.794071
+2024-04-02 21:27:40 (INFO): 79650/112500 (epoch 704): loss: train=0.134043, val=0.791538; energy_mae: train=0.038425, val=0.540793; force_mae: train=0.066834, val=0.398129; force_rmse: train=0.135009, val=0.794071
+2024-04-02 21:28:37 (INFO): 79875/112500 (epoch 706): loss: train=0.133866, val=0.791538; energy_mae: train=0.037827, val=0.540785; force_mae: train=0.066708, val=0.398129; force_rmse: train=0.134836, val=0.794071
+2024-04-02 21:29:33 (INFO): 80100/112500 (epoch 708): loss: train=0.132808, val=0.791538; energy_mae: train=0.037202, val=0.540790; force_mae: train=0.066259, val=0.398129; force_rmse: train=0.133774, val=0.794071
+2024-04-02 21:29:33 (INFO): Step 356: reducing on plateu by 0.5.
+2024-04-02 21:30:31 (INFO): 80325/112500 (epoch 710): loss: train=0.134099, val=0.791538; energy_mae: train=0.040264, val=0.540791; force_mae: train=0.066884, val=0.398129; force_rmse: train=0.135047, val=0.794071
+2024-04-02 21:31:29 (INFO): 80550/112500 (epoch 712): loss: train=0.133472, val=0.791538; energy_mae: train=0.037817, val=0.540793; force_mae: train=0.066503, val=0.398129; force_rmse: train=0.134438, val=0.794071
+2024-04-02 21:32:27 (INFO): 80775/112500 (epoch 714): loss: train=0.134365, val=0.791538; energy_mae: train=0.039110, val=0.540795; force_mae: train=0.067004, val=0.398129; force_rmse: train=0.135327, val=0.794071
+2024-04-02 21:33:26 (INFO): 81000/112500 (epoch 716): loss: train=0.133546, val=0.791538; energy_mae: train=0.036153, val=0.540790; force_mae: train=0.066599, val=0.398129; force_rmse: train=0.134530, val=0.794071
+2024-04-02 21:34:24 (INFO): 81225/112500 (epoch 718): loss: train=0.133306, val=0.791538; energy_mae: train=0.039840, val=0.540792; force_mae: train=0.066433, val=0.398129; force_rmse: train=0.134250, val=0.794071
+2024-04-02 21:35:22 (INFO): 81450/112500 (epoch 720): loss: train=0.133246, val=0.791538; energy_mae: train=0.038532, val=0.540792; force_mae: train=0.066438, val=0.398129; force_rmse: train=0.134203, val=0.794071
+2024-04-02 21:36:20 (INFO): 81675/112500 (epoch 722): loss: train=0.134693, val=0.791538; energy_mae: train=0.038866, val=0.540790; force_mae: train=0.067199, val=0.398129; force_rmse: train=0.135661, val=0.794071
+2024-04-02 21:37:17 (INFO): 81900/112500 (epoch 724): loss: train=0.133648, val=0.791538; energy_mae: train=0.037023, val=0.540791; force_mae: train=0.066605, val=0.398129; force_rmse: train=0.134624, val=0.794071
+2024-04-02 21:38:16 (INFO): 82125/112500 (epoch 726): loss: train=0.132413, val=0.791538; energy_mae: train=0.039981, val=0.540791; force_mae: train=0.066040, val=0.398129; force_rmse: train=0.133347, val=0.794071
+2024-04-02 21:39:14 (INFO): 82350/112500 (epoch 728): loss: train=0.134721, val=0.791538; energy_mae: train=0.038263, val=0.540786; force_mae: train=0.067176, val=0.398129; force_rmse: train=0.135696, val=0.794071
+2024-04-02 21:40:12 (INFO): 82575/112500 (epoch 730): loss: train=0.133257, val=0.791538; energy_mae: train=0.038229, val=0.540791; force_mae: train=0.066454, val=0.398129; force_rmse: train=0.134217, val=0.794071
+2024-04-02 21:40:12 (INFO): Step 367: reducing on plateu by 0.5.
+2024-04-02 21:41:10 (INFO): 82800/112500 (epoch 732): loss: train=0.133505, val=0.791538; energy_mae: train=0.038161, val=0.540787; force_mae: train=0.066586, val=0.398129; force_rmse: train=0.134468, val=0.794071
+2024-04-02 21:42:08 (INFO): 83025/112500 (epoch 734): loss: train=0.134094, val=0.791538; energy_mae: train=0.040144, val=0.540792; force_mae: train=0.066864, val=0.398129; force_rmse: train=0.135043, val=0.794071
+2024-04-02 21:43:05 (INFO): 83250/112500 (epoch 736): loss: train=0.133920, val=0.791538; energy_mae: train=0.037760, val=0.540789; force_mae: train=0.066784, val=0.398129; force_rmse: train=0.134891, val=0.794071
+2024-04-02 21:44:01 (INFO): 83475/112500 (epoch 738): loss: train=0.134050, val=0.791538; energy_mae: train=0.035467, val=0.540790; force_mae: train=0.066796, val=0.398129; force_rmse: train=0.135046, val=0.794071
+2024-04-02 21:44:57 (INFO): 83700/112500 (epoch 740): loss: train=0.133074, val=0.791538; energy_mae: train=0.040378, val=0.540793; force_mae: train=0.066356, val=0.398129; force_rmse: train=0.134010, val=0.794071
+2024-04-02 21:45:54 (INFO): 83925/112500 (epoch 742): loss: train=0.133703, val=0.791538; energy_mae: train=0.038223, val=0.540791; force_mae: train=0.066651, val=0.398129; force_rmse: train=0.134668, val=0.794071
+2024-04-02 21:46:53 (INFO): 84150/112500 (epoch 744): loss: train=0.133592, val=0.791538; energy_mae: train=0.040114, val=0.540786; force_mae: train=0.066631, val=0.398129; force_rmse: train=0.134536, val=0.794071
+2024-04-02 21:47:51 (INFO): 84375/112500 (epoch 746): loss: train=0.133631, val=0.791538; energy_mae: train=0.037908, val=0.540791; force_mae: train=0.066585, val=0.398129; force_rmse: train=0.134598, val=0.794071
+2024-04-02 21:48:47 (INFO): 84600/112500 (epoch 748): loss: train=0.132951, val=0.791538; energy_mae: train=0.038280, val=0.540785; force_mae: train=0.066349, val=0.398129; force_rmse: train=0.133908, val=0.794071
+2024-04-02 21:49:43 (INFO): 84825/112500 (epoch 750): loss: train=0.133990, val=0.791538; energy_mae: train=0.037427, val=0.540790; force_mae: train=0.066804, val=0.398129; force_rmse: train=0.134966, val=0.794071
+2024-04-02 21:50:40 (INFO): 85050/112500 (epoch 752): loss: train=0.134541, val=0.791538; energy_mae: train=0.039208, val=0.540787; force_mae: train=0.067118, val=0.398129; force_rmse: train=0.135504, val=0.794071
+2024-04-02 21:50:40 (INFO): Step 378: reducing on plateu by 0.5.
+2024-04-02 21:51:39 (INFO): 85275/112500 (epoch 754): loss: train=0.134102, val=0.791538; energy_mae: train=0.037993, val=0.540790; force_mae: train=0.066856, val=0.398129; force_rmse: train=0.135073, val=0.794071
+2024-04-02 21:52:37 (INFO): 85500/112500 (epoch 756): loss: train=0.133302, val=0.791538; energy_mae: train=0.037664, val=0.540789; force_mae: train=0.066464, val=0.398129; force_rmse: train=0.134267, val=0.794071
+2024-04-02 21:53:34 (INFO): 85725/112500 (epoch 758): loss: train=0.133159, val=0.791538; energy_mae: train=0.038934, val=0.540790; force_mae: train=0.066352, val=0.398129; force_rmse: train=0.134111, val=0.794071
+2024-04-02 21:54:30 (INFO): 85950/112500 (epoch 760): loss: train=0.134193, val=0.791538; energy_mae: train=0.040024, val=0.540798; force_mae: train=0.066921, val=0.398129; force_rmse: train=0.135144, val=0.794071
+2024-04-02 21:55:26 (INFO): 86175/112500 (epoch 762): loss: train=0.133962, val=0.791538; energy_mae: train=0.036887, val=0.540790; force_mae: train=0.066818, val=0.398129; force_rmse: train=0.134943, val=0.794071
+2024-04-02 21:56:22 (INFO): 86400/112500 (epoch 764): loss: train=0.132940, val=0.791538; energy_mae: train=0.039535, val=0.540792; force_mae: train=0.066240, val=0.398129; force_rmse: train=0.133883, val=0.794071
+2024-04-02 21:57:21 (INFO): 86625/112500 (epoch 766): loss: train=0.132936, val=0.791538; energy_mae: train=0.038014, val=0.540793; force_mae: train=0.066347, val=0.398129; force_rmse: train=0.133894, val=0.794071
+2024-04-02 21:58:19 (INFO): 86850/112500 (epoch 768): loss: train=0.134220, val=0.791538; energy_mae: train=0.038921, val=0.540792; force_mae: train=0.066934, val=0.398129; force_rmse: train=0.135183, val=0.794071
+2024-04-02 21:59:17 (INFO): 87075/112500 (epoch 770): loss: train=0.134238, val=0.791538; energy_mae: train=0.036322, val=0.540795; force_mae: train=0.066895, val=0.398129; force_rmse: train=0.135227, val=0.794071
+2024-04-02 22:00:15 (INFO): 87300/112500 (epoch 772): loss: train=0.132640, val=0.791538; energy_mae: train=0.039792, val=0.540786; force_mae: train=0.066164, val=0.398129; force_rmse: train=0.133578, val=0.794071
+2024-04-02 22:01:13 (INFO): 87525/112500 (epoch 774): loss: train=0.134948, val=0.791538; energy_mae: train=0.038970, val=0.540780; force_mae: train=0.067240, val=0.398129; force_rmse: train=0.135918, val=0.794071
+2024-04-02 22:01:13 (INFO): Step 389: reducing on plateu by 0.5.
+2024-04-02 22:02:11 (INFO): 87750/112500 (epoch 776): loss: train=0.133667, val=0.791538; energy_mae: train=0.037307, val=0.540792; force_mae: train=0.066717, val=0.398129; force_rmse: train=0.134641, val=0.794071
+2024-04-02 22:03:10 (INFO): 87975/112500 (epoch 778): loss: train=0.133655, val=0.791538; energy_mae: train=0.041189, val=0.540795; force_mae: train=0.066561, val=0.398129; force_rmse: train=0.134589, val=0.794071
+2024-04-02 22:04:08 (INFO): 88200/112500 (epoch 780): loss: train=0.132870, val=0.791538; energy_mae: train=0.035235, val=0.540792; force_mae: train=0.066315, val=0.398129; force_rmse: train=0.133856, val=0.794071
+2024-04-02 22:05:06 (INFO): 88425/112500 (epoch 782): loss: train=0.134473, val=0.791538; energy_mae: train=0.037141, val=0.540792; force_mae: train=0.067014, val=0.398129; force_rmse: train=0.135456, val=0.794071
+2024-04-02 22:06:04 (INFO): 88650/112500 (epoch 784): loss: train=0.133008, val=0.791538; energy_mae: train=0.040056, val=0.540795; force_mae: train=0.066338, val=0.398129; force_rmse: train=0.133947, val=0.794071
+2024-04-02 22:07:03 (INFO): 88875/112500 (epoch 786): loss: train=0.135132, val=0.791538; energy_mae: train=0.040448, val=0.540792; force_mae: train=0.067317, val=0.398129; force_rmse: train=0.136088, val=0.794071
+2024-04-02 22:08:01 (INFO): 89100/112500 (epoch 788): loss: train=0.131582, val=0.791538; energy_mae: train=0.038349, val=0.540786; force_mae: train=0.065682, val=0.398129; force_rmse: train=0.132524, val=0.794071
+2024-04-02 22:09:00 (INFO): 89325/112500 (epoch 790): loss: train=0.135106, val=0.791538; energy_mae: train=0.038100, val=0.540790; force_mae: train=0.067373, val=0.398129; force_rmse: train=0.136086, val=0.794071
+2024-04-02 22:09:58 (INFO): 89550/112500 (epoch 792): loss: train=0.133277, val=0.791538; energy_mae: train=0.037935, val=0.540787; force_mae: train=0.066498, val=0.398129; force_rmse: train=0.134240, val=0.794071
+2024-04-02 22:10:56 (INFO): 89775/112500 (epoch 794): loss: train=0.134369, val=0.791538; energy_mae: train=0.037888, val=0.540792; force_mae: train=0.066883, val=0.398129; force_rmse: train=0.135344, val=0.794071
+2024-04-02 22:11:54 (INFO): 90000/112500 (epoch 796): loss: train=0.132965, val=0.791538; energy_mae: train=0.040195, val=0.540790; force_mae: train=0.066338, val=0.398129; force_rmse: train=0.133902, val=0.794071
+2024-04-02 22:11:54 (INFO): Step 400: reducing on plateu by 0.5.
+2024-04-02 22:12:51 (INFO): 90225/112500 (epoch 798): loss: train=0.133544, val=0.791538; energy_mae: train=0.037072, val=0.540790; force_mae: train=0.066622, val=0.398129; force_rmse: train=0.134519, val=0.794071
+2024-04-02 22:13:50 (INFO): 90450/112500 (epoch 800): loss: train=0.133949, val=0.791538; energy_mae: train=0.037873, val=0.540789; force_mae: train=0.066727, val=0.398129; force_rmse: train=0.134919, val=0.794071
+2024-04-02 22:14:48 (INFO): 90675/112500 (epoch 802): loss: train=0.133504, val=0.791538; energy_mae: train=0.038327, val=0.540791; force_mae: train=0.066535, val=0.398129; force_rmse: train=0.134465, val=0.794071
+2024-04-02 22:15:46 (INFO): 90900/112500 (epoch 804): loss: train=0.134656, val=0.791538; energy_mae: train=0.039976, val=0.540784; force_mae: train=0.067168, val=0.398129; force_rmse: train=0.135612, val=0.794071
+2024-04-02 22:16:44 (INFO): 91125/112500 (epoch 806): loss: train=0.132466, val=0.791538; energy_mae: train=0.035928, val=0.540791; force_mae: train=0.066146, val=0.398129; force_rmse: train=0.133441, val=0.794071
+2024-04-02 22:17:42 (INFO): 91350/112500 (epoch 808): loss: train=0.134129, val=0.791538; energy_mae: train=0.041008, val=0.540792; force_mae: train=0.066767, val=0.398129; force_rmse: train=0.135069, val=0.794071
+2024-04-02 22:18:40 (INFO): 91575/112500 (epoch 810): loss: train=0.134052, val=0.791538; energy_mae: train=0.038836, val=0.540784; force_mae: train=0.066911, val=0.398129; force_rmse: train=0.135014, val=0.794071
+2024-04-02 22:19:38 (INFO): 91800/112500 (epoch 812): loss: train=0.132728, val=0.791538; energy_mae: train=0.036854, val=0.540793; force_mae: train=0.066161, val=0.398129; force_rmse: train=0.133696, val=0.794071
+2024-04-02 22:20:37 (INFO): 92025/112500 (epoch 814): loss: train=0.134313, val=0.791538; energy_mae: train=0.038511, val=0.540790; force_mae: train=0.066964, val=0.398129; force_rmse: train=0.135280, val=0.794071
+2024-04-02 22:21:34 (INFO): 92250/112500 (epoch 816): loss: train=0.133658, val=0.791538; energy_mae: train=0.038814, val=0.540786; force_mae: train=0.066678, val=0.398129; force_rmse: train=0.134616, val=0.794071
+2024-04-02 22:22:30 (INFO): 92475/112500 (epoch 818): loss: train=0.133445, val=0.791538; energy_mae: train=0.037467, val=0.540791; force_mae: train=0.066565, val=0.398129; force_rmse: train=0.134414, val=0.794071
+2024-04-02 22:22:30 (INFO): Step 411: reducing on plateu by 0.5.
+2024-04-02 22:23:26 (INFO): 92700/112500 (epoch 820): loss: train=0.133539, val=0.791538; energy_mae: train=0.038318, val=0.540792; force_mae: train=0.066517, val=0.398129; force_rmse: train=0.134501, val=0.794071
+2024-04-02 22:24:25 (INFO): 92925/112500 (epoch 822): loss: train=0.133828, val=0.791538; energy_mae: train=0.039012, val=0.540791; force_mae: train=0.066698, val=0.398129; force_rmse: train=0.134786, val=0.794071
+2024-04-02 22:25:22 (INFO): 93150/112500 (epoch 824): loss: train=0.133060, val=0.791538; energy_mae: train=0.037890, val=0.540792; force_mae: train=0.066426, val=0.398129; force_rmse: train=0.134022, val=0.794071
+2024-04-02 22:26:20 (INFO): 93375/112500 (epoch 826): loss: train=0.134116, val=0.791538; energy_mae: train=0.039781, val=0.540791; force_mae: train=0.066785, val=0.398129; force_rmse: train=0.135069, val=0.794071
+2024-04-02 22:27:17 (INFO): 93600/112500 (epoch 828): loss: train=0.133658, val=0.791538; energy_mae: train=0.037734, val=0.540790; force_mae: train=0.066692, val=0.398129; force_rmse: train=0.134627, val=0.794071
+2024-04-02 22:28:15 (INFO): 93825/112500 (epoch 830): loss: train=0.133755, val=0.791538; energy_mae: train=0.038865, val=0.540790; force_mae: train=0.066667, val=0.398129; force_rmse: train=0.134714, val=0.794071
+2024-04-02 22:29:11 (INFO): 94050/112500 (epoch 832): loss: train=0.133992, val=0.791538; energy_mae: train=0.037646, val=0.540790; force_mae: train=0.066858, val=0.398129; force_rmse: train=0.134966, val=0.794071
+2024-04-02 22:30:08 (INFO): 94275/112500 (epoch 834): loss: train=0.132985, val=0.791538; energy_mae: train=0.038639, val=0.540789; force_mae: train=0.066294, val=0.398129; force_rmse: train=0.133938, val=0.794071
+2024-04-02 22:31:04 (INFO): 94500/112500 (epoch 836): loss: train=0.134084, val=0.791538; energy_mae: train=0.040142, val=0.540790; force_mae: train=0.066827, val=0.398129; force_rmse: train=0.135033, val=0.794071
+2024-04-02 22:32:01 (INFO): 94725/112500 (epoch 838): loss: train=0.133963, val=0.791538; energy_mae: train=0.037859, val=0.540791; force_mae: train=0.066771, val=0.398129; force_rmse: train=0.134934, val=0.794071
+2024-04-02 22:32:58 (INFO): 94950/112500 (epoch 840): loss: train=0.133237, val=0.791538; energy_mae: train=0.037121, val=0.540787; force_mae: train=0.066449, val=0.398129; force_rmse: train=0.134208, val=0.794071
+2024-04-02 22:32:58 (INFO): Step 422: reducing on plateu by 0.5.
+2024-04-02 22:33:54 (INFO): 95175/112500 (epoch 842): loss: train=0.133289, val=0.791538; energy_mae: train=0.039200, val=0.540793; force_mae: train=0.066465, val=0.398129; force_rmse: train=0.134239, val=0.794071
+2024-04-02 22:34:50 (INFO): 95400/112500 (epoch 844): loss: train=0.134589, val=0.791538; energy_mae: train=0.039575, val=0.540787; force_mae: train=0.067121, val=0.398129; force_rmse: train=0.135549, val=0.794071
+2024-04-02 22:35:46 (INFO): 95625/112500 (epoch 846): loss: train=0.133660, val=0.791538; energy_mae: train=0.036259, val=0.540793; force_mae: train=0.066627, val=0.398129; force_rmse: train=0.134644, val=0.794071
+2024-04-02 22:36:42 (INFO): 95850/112500 (epoch 848): loss: train=0.133698, val=0.791538; energy_mae: train=0.037829, val=0.540793; force_mae: train=0.066648, val=0.398129; force_rmse: train=0.134666, val=0.794071
+2024-04-02 22:37:38 (INFO): 96075/112500 (epoch 850): loss: train=0.133178, val=0.791538; energy_mae: train=0.040063, val=0.540793; force_mae: train=0.066431, val=0.398129; force_rmse: train=0.134118, val=0.794071
+2024-04-02 22:38:36 (INFO): 96300/112500 (epoch 852): loss: train=0.134393, val=0.791538; energy_mae: train=0.037376, val=0.540789; force_mae: train=0.067038, val=0.398129; force_rmse: train=0.135373, val=0.794071
+2024-04-02 22:39:34 (INFO): 96525/112500 (epoch 854): loss: train=0.132778, val=0.791538; energy_mae: train=0.038796, val=0.540792; force_mae: train=0.066193, val=0.398129; force_rmse: train=0.133728, val=0.794071
+2024-04-02 22:40:31 (INFO): 96750/112500 (epoch 856): loss: train=0.134346, val=0.791538; energy_mae: train=0.038982, val=0.540792; force_mae: train=0.066972, val=0.398129; force_rmse: train=0.135309, val=0.794071
+2024-04-02 22:41:27 (INFO): 96975/112500 (epoch 858): loss: train=0.133108, val=0.791538; energy_mae: train=0.037412, val=0.540789; force_mae: train=0.066411, val=0.398129; force_rmse: train=0.134074, val=0.794071
+2024-04-02 22:42:24 (INFO): 97200/112500 (epoch 860): loss: train=0.134215, val=0.791538; energy_mae: train=0.039567, val=0.540790; force_mae: train=0.066885, val=0.398129; force_rmse: train=0.135171, val=0.794071
+2024-04-02 22:43:21 (INFO): 97425/112500 (epoch 862): loss: train=0.133998, val=0.791538; energy_mae: train=0.039422, val=0.540789; force_mae: train=0.066812, val=0.398129; force_rmse: train=0.134954, val=0.794071
+2024-04-02 22:43:21 (INFO): Step 433: reducing on plateu by 0.5.
+2024-04-02 22:44:17 (INFO): 97650/112500 (epoch 864): loss: train=0.133298, val=0.791538; energy_mae: train=0.037176, val=0.540791; force_mae: train=0.066479, val=0.398129; force_rmse: train=0.134269, val=0.794071
+2024-04-02 22:45:13 (INFO): 97875/112500 (epoch 866): loss: train=0.133507, val=0.791538; energy_mae: train=0.039185, val=0.540790; force_mae: train=0.066565, val=0.398129; force_rmse: train=0.134459, val=0.794071
+2024-04-02 22:46:09 (INFO): 98100/112500 (epoch 868): loss: train=0.133626, val=0.791538; energy_mae: train=0.037297, val=0.540789; force_mae: train=0.066643, val=0.398129; force_rmse: train=0.134599, val=0.794071
+2024-04-02 22:47:06 (INFO): 98325/112500 (epoch 870): loss: train=0.133634, val=0.791538; energy_mae: train=0.038335, val=0.540795; force_mae: train=0.066626, val=0.398129; force_rmse: train=0.134597, val=0.794071
+2024-04-02 22:48:04 (INFO): 98550/112500 (epoch 872): loss: train=0.133999, val=0.791538; energy_mae: train=0.038767, val=0.540791; force_mae: train=0.066816, val=0.398129; force_rmse: train=0.134961, val=0.794071
+2024-04-02 22:49:00 (INFO): 98775/112500 (epoch 874): loss: train=0.133334, val=0.791538; energy_mae: train=0.039563, val=0.540789; force_mae: train=0.066470, val=0.398129; force_rmse: train=0.134282, val=0.794071
+2024-04-02 22:49:58 (INFO): 99000/112500 (epoch 876): loss: train=0.133795, val=0.791538; energy_mae: train=0.037922, val=0.540789; force_mae: train=0.066696, val=0.398129; force_rmse: train=0.134764, val=0.794071
+2024-04-02 22:50:57 (INFO): 99225/112500 (epoch 878): loss: train=0.133320, val=0.791538; energy_mae: train=0.038531, val=0.540792; force_mae: train=0.066474, val=0.398129; force_rmse: train=0.134278, val=0.794071
+2024-04-02 22:51:55 (INFO): 99450/112500 (epoch 880): loss: train=0.134321, val=0.791538; energy_mae: train=0.037372, val=0.540785; force_mae: train=0.066992, val=0.398129; force_rmse: train=0.135300, val=0.794071
+2024-04-02 22:52:52 (INFO): 99675/112500 (epoch 882): loss: train=0.133723, val=0.791538; energy_mae: train=0.038977, val=0.540787; force_mae: train=0.066643, val=0.398129; force_rmse: train=0.134680, val=0.794071
+2024-04-02 22:53:48 (INFO): 99900/112500 (epoch 884): loss: train=0.133418, val=0.791538; energy_mae: train=0.038416, val=0.540787; force_mae: train=0.066540, val=0.398129; force_rmse: train=0.134378, val=0.794071
+2024-04-02 22:53:48 (INFO): Step 444: reducing on plateu by 0.5.
+2024-04-02 22:54:45 (INFO): 100125/112500 (epoch 886): loss: train=0.133813, val=0.791538; energy_mae: train=0.038463, val=0.540787; force_mae: train=0.066752, val=0.398129; force_rmse: train=0.134776, val=0.794071
+2024-04-02 22:55:41 (INFO): 100350/112500 (epoch 888): loss: train=0.133372, val=0.791538; energy_mae: train=0.039399, val=0.540791; force_mae: train=0.066500, val=0.398129; force_rmse: train=0.134321, val=0.794071
+2024-04-02 22:56:38 (INFO): 100575/112500 (epoch 890): loss: train=0.134105, val=0.791538; energy_mae: train=0.036952, val=0.540787; force_mae: train=0.066825, val=0.398129; force_rmse: train=0.135087, val=0.794071
+2024-04-02 22:57:36 (INFO): 100800/112500 (epoch 892): loss: train=0.133741, val=0.791538; energy_mae: train=0.038985, val=0.540789; force_mae: train=0.066716, val=0.398129; force_rmse: train=0.134698, val=0.794071
+2024-04-02 22:58:34 (INFO): 101025/112500 (epoch 894): loss: train=0.133445, val=0.791538; energy_mae: train=0.038379, val=0.540787; force_mae: train=0.066520, val=0.398129; force_rmse: train=0.134405, val=0.794071
+2024-04-02 22:59:33 (INFO): 101250/112500 (epoch 896): loss: train=0.133866, val=0.791538; energy_mae: train=0.038549, val=0.540792; force_mae: train=0.066748, val=0.398129; force_rmse: train=0.134829, val=0.794071
+2024-04-02 23:00:31 (INFO): 101475/112500 (epoch 898): loss: train=0.133584, val=0.791538; energy_mae: train=0.038415, val=0.540791; force_mae: train=0.066616, val=0.398129; force_rmse: train=0.134545, val=0.794071
+2024-04-02 23:01:28 (INFO): 101700/112500 (epoch 900): loss: train=0.133670, val=0.791538; energy_mae: train=0.038540, val=0.540786; force_mae: train=0.066654, val=0.398129; force_rmse: train=0.134631, val=0.794071
+2024-04-02 23:02:24 (INFO): 101925/112500 (epoch 901): loss: train=0.133701, val=0.791538; energy_mae: train=0.038494, val=0.540786; force_mae: train=0.066663, val=0.398129; force_rmse: train=0.134663, val=0.794071
+2024-04-02 23:03:20 (INFO): 102150/112500 (epoch 903): loss: train=0.133628, val=0.791538; energy_mae: train=0.037330, val=0.540789; force_mae: train=0.066637, val=0.398129; force_rmse: train=0.134601, val=0.794071
+2024-04-02 23:04:16 (INFO): 102375/112500 (epoch 905): loss: train=0.133667, val=0.791538; energy_mae: train=0.039404, val=0.540792; force_mae: train=0.066650, val=0.398129; force_rmse: train=0.134619, val=0.794071
+2024-04-02 23:04:16 (INFO): Step 455: reducing on plateu by 0.5.
+2024-04-02 23:05:13 (INFO): 102600/112500 (epoch 907): loss: train=0.133570, val=0.791538; energy_mae: train=0.038611, val=0.540785; force_mae: train=0.066593, val=0.398129; force_rmse: train=0.134529, val=0.794071
+2024-04-02 23:06:11 (INFO): 102825/112500 (epoch 909): loss: train=0.134150, val=0.791538; energy_mae: train=0.038825, val=0.540790; force_mae: train=0.066877, val=0.398129; force_rmse: train=0.135113, val=0.794071
+2024-04-02 23:07:08 (INFO): 103050/112500 (epoch 911): loss: train=0.132992, val=0.791538; energy_mae: train=0.037887, val=0.540792; force_mae: train=0.066324, val=0.398129; force_rmse: train=0.133953, val=0.794071
+2024-04-02 23:08:04 (INFO): 103275/112500 (epoch 913): loss: train=0.133933, val=0.791538; energy_mae: train=0.039080, val=0.540787; force_mae: train=0.066778, val=0.398129; force_rmse: train=0.134891, val=0.794071
+2024-04-02 23:09:02 (INFO): 103500/112500 (epoch 915): loss: train=0.133496, val=0.791538; energy_mae: train=0.037705, val=0.540785; force_mae: train=0.066561, val=0.398129; force_rmse: train=0.134463, val=0.794071
+2024-04-02 23:10:00 (INFO): 103725/112500 (epoch 917): loss: train=0.134110, val=0.791538; energy_mae: train=0.038161, val=0.540790; force_mae: train=0.066881, val=0.398129; force_rmse: train=0.135080, val=0.794071
+2024-04-02 23:10:58 (INFO): 103950/112500 (epoch 919): loss: train=0.133445, val=0.791538; energy_mae: train=0.039468, val=0.540793; force_mae: train=0.066518, val=0.398129; force_rmse: train=0.134395, val=0.794071
+2024-04-02 23:11:56 (INFO): 104175/112500 (epoch 921): loss: train=0.133049, val=0.791538; energy_mae: train=0.038136, val=0.540797; force_mae: train=0.066386, val=0.398129; force_rmse: train=0.134008, val=0.794071
+2024-04-02 23:12:54 (INFO): 104400/112500 (epoch 923): loss: train=0.134870, val=0.791538; energy_mae: train=0.037344, val=0.540793; force_mae: train=0.067206, val=0.398129; force_rmse: train=0.135855, val=0.794071
+2024-04-02 23:13:52 (INFO): 104625/112500 (epoch 925): loss: train=0.133147, val=0.791538; energy_mae: train=0.039620, val=0.540791; force_mae: train=0.066377, val=0.398129; force_rmse: train=0.134092, val=0.794071
+2024-04-02 23:14:51 (INFO): 104850/112500 (epoch 927): loss: train=0.133981, val=0.791538; energy_mae: train=0.038722, val=0.540786; force_mae: train=0.066814, val=0.398129; force_rmse: train=0.134944, val=0.794071
+2024-04-02 23:14:51 (INFO): Step 466: reducing on plateu by 0.5.
+2024-04-02 23:15:49 (INFO): 105075/112500 (epoch 929): loss: train=0.133851, val=0.791538; energy_mae: train=0.037970, val=0.540793; force_mae: train=0.066745, val=0.398129; force_rmse: train=0.134819, val=0.794071
+2024-04-02 23:16:45 (INFO): 105300/112500 (epoch 931): loss: train=0.133469, val=0.791538; energy_mae: train=0.038906, val=0.540792; force_mae: train=0.066579, val=0.398129; force_rmse: train=0.134424, val=0.794071
+2024-04-02 23:17:41 (INFO): 105525/112500 (epoch 933): loss: train=0.133431, val=0.791538; energy_mae: train=0.038042, val=0.540793; force_mae: train=0.066519, val=0.398129; force_rmse: train=0.134395, val=0.794071
+2024-04-02 23:18:39 (INFO): 105750/112500 (epoch 935): loss: train=0.133619, val=0.791538; energy_mae: train=0.038126, val=0.540791; force_mae: train=0.066657, val=0.398129; force_rmse: train=0.134584, val=0.794071
+2024-04-02 23:19:36 (INFO): 105975/112500 (epoch 937): loss: train=0.134002, val=0.791538; energy_mae: train=0.039064, val=0.540786; force_mae: train=0.066753, val=0.398129; force_rmse: train=0.134961, val=0.794071
+2024-04-02 23:20:32 (INFO): 106200/112500 (epoch 939): loss: train=0.133639, val=0.791538; energy_mae: train=0.037850, val=0.540787; force_mae: train=0.066647, val=0.398129; force_rmse: train=0.134607, val=0.794071
+2024-04-02 23:21:29 (INFO): 106425/112500 (epoch 941): loss: train=0.133232, val=0.791538; energy_mae: train=0.038936, val=0.540795; force_mae: train=0.066448, val=0.398129; force_rmse: train=0.134184, val=0.794071
+2024-04-02 23:22:25 (INFO): 106650/112500 (epoch 943): loss: train=0.134372, val=0.791538; energy_mae: train=0.038169, val=0.540787; force_mae: train=0.067000, val=0.398129; force_rmse: train=0.135343, val=0.794071
+2024-04-02 23:23:23 (INFO): 106875/112500 (epoch 945): loss: train=0.132826, val=0.791538; energy_mae: train=0.038300, val=0.540795; force_mae: train=0.066228, val=0.398129; force_rmse: train=0.133781, val=0.794071
+2024-04-02 23:24:21 (INFO): 107100/112500 (epoch 947): loss: train=0.134659, val=0.791538; energy_mae: train=0.038030, val=0.540787; force_mae: train=0.067131, val=0.398129; force_rmse: train=0.135635, val=0.794071
+2024-04-02 23:25:17 (INFO): 107325/112500 (epoch 949): loss: train=0.133731, val=0.791538; energy_mae: train=0.038747, val=0.540789; force_mae: train=0.066742, val=0.398129; force_rmse: train=0.134690, val=0.794071
+2024-04-02 23:25:17 (INFO): Step 477: reducing on plateu by 0.5.
+2024-04-02 23:26:13 (INFO): 107550/112500 (epoch 951): loss: train=0.133093, val=0.791538; energy_mae: train=0.037144, val=0.540789; force_mae: train=0.066289, val=0.398129; force_rmse: train=0.134062, val=0.794071
+2024-04-02 23:27:09 (INFO): 107775/112500 (epoch 953): loss: train=0.134051, val=0.791538; energy_mae: train=0.040022, val=0.540791; force_mae: train=0.066858, val=0.398129; force_rmse: train=0.135001, val=0.794071
+2024-04-02 23:28:07 (INFO): 108000/112500 (epoch 955): loss: train=0.133187, val=0.791538; energy_mae: train=0.037629, val=0.540795; force_mae: train=0.066419, val=0.398129; force_rmse: train=0.134152, val=0.794071
+2024-04-02 23:29:05 (INFO): 108225/112500 (epoch 957): loss: train=0.133620, val=0.791538; energy_mae: train=0.040689, val=0.540785; force_mae: train=0.066614, val=0.398129; force_rmse: train=0.134559, val=0.794071
+2024-04-02 23:30:03 (INFO): 108450/112500 (epoch 959): loss: train=0.134409, val=0.791538; energy_mae: train=0.036760, val=0.540785; force_mae: train=0.067005, val=0.398129; force_rmse: train=0.135396, val=0.794071
+2024-04-02 23:31:01 (INFO): 108675/112500 (epoch 961): loss: train=0.133272, val=0.791538; energy_mae: train=0.038001, val=0.540790; force_mae: train=0.066415, val=0.398129; force_rmse: train=0.134234, val=0.794071
+2024-04-02 23:31:59 (INFO): 108900/112500 (epoch 963): loss: train=0.133704, val=0.791538; energy_mae: train=0.038486, val=0.540792; force_mae: train=0.066680, val=0.398129; force_rmse: train=0.134665, val=0.794071
+2024-04-02 23:32:57 (INFO): 109125/112500 (epoch 965): loss: train=0.134142, val=0.791538; energy_mae: train=0.037577, val=0.540792; force_mae: train=0.066913, val=0.398129; force_rmse: train=0.135118, val=0.794071
+2024-04-02 23:33:55 (INFO): 109350/112500 (epoch 967): loss: train=0.133449, val=0.791538; energy_mae: train=0.037827, val=0.540787; force_mae: train=0.066552, val=0.398129; force_rmse: train=0.134415, val=0.794071
+2024-04-02 23:34:53 (INFO): 109575/112500 (epoch 969): loss: train=0.133368, val=0.791538; energy_mae: train=0.039806, val=0.540785; force_mae: train=0.066489, val=0.398129; force_rmse: train=0.134313, val=0.794071
+2024-04-02 23:35:52 (INFO): 109800/112500 (epoch 971): loss: train=0.133592, val=0.791538; energy_mae: train=0.039226, val=0.540791; force_mae: train=0.066600, val=0.398129; force_rmse: train=0.134546, val=0.794071
+2024-04-02 23:35:52 (INFO): Step 488: reducing on plateu by 0.5.
+2024-04-02 23:36:50 (INFO): 110025/112500 (epoch 973): loss: train=0.134114, val=0.791538; energy_mae: train=0.037717, val=0.540787; force_mae: train=0.066879, val=0.398129; force_rmse: train=0.135087, val=0.794071
+2024-04-02 23:37:48 (INFO): 110250/112500 (epoch 975): loss: train=0.133767, val=0.791538; energy_mae: train=0.039731, val=0.540791; force_mae: train=0.066737, val=0.398129; force_rmse: train=0.134717, val=0.794071
+2024-04-02 23:38:46 (INFO): 110475/112500 (epoch 977): loss: train=0.133254, val=0.791538; energy_mae: train=0.037248, val=0.540790; force_mae: train=0.066360, val=0.398129; force_rmse: train=0.134224, val=0.794071
+2024-04-02 23:39:44 (INFO): 110700/112500 (epoch 979): loss: train=0.133840, val=0.791538; energy_mae: train=0.038485, val=0.540787; force_mae: train=0.066759, val=0.398129; force_rmse: train=0.134803, val=0.794071
+2024-04-02 23:40:41 (INFO): 110925/112500 (epoch 981): loss: train=0.133449, val=0.791538; energy_mae: train=0.039780, val=0.540787; force_mae: train=0.066572, val=0.398129; force_rmse: train=0.134395, val=0.794071
+2024-04-02 23:41:38 (INFO): 111150/112500 (epoch 983): loss: train=0.134156, val=0.791538; energy_mae: train=0.037760, val=0.540785; force_mae: train=0.066878, val=0.398129; force_rmse: train=0.135130, val=0.794071
+2024-04-02 23:42:34 (INFO): 111375/112500 (epoch 985): loss: train=0.133463, val=0.791538; energy_mae: train=0.037478, val=0.540786; force_mae: train=0.066535, val=0.398129; force_rmse: train=0.134432, val=0.794071
+2024-04-02 23:43:32 (INFO): 111600/112500 (epoch 987): loss: train=0.133388, val=0.791538; energy_mae: train=0.039025, val=0.540785; force_mae: train=0.066536, val=0.398129; force_rmse: train=0.134342, val=0.794071
+2024-04-02 23:44:30 (INFO): 111825/112500 (epoch 989): loss: train=0.133730, val=0.791538; energy_mae: train=0.036576, val=0.540792; force_mae: train=0.066628, val=0.398129; force_rmse: train=0.134712, val=0.794071
+2024-04-02 23:45:27 (INFO): 112050/112500 (epoch 991): loss: train=0.134103, val=0.791538; energy_mae: train=0.039994, val=0.540785; force_mae: train=0.066911, val=0.398129; force_rmse: train=0.135053, val=0.794071
+2024-04-02 23:46:24 (INFO): 112275/112500 (epoch 993): loss: train=0.133021, val=0.791538; energy_mae: train=0.038148, val=0.540790; force_mae: train=0.066325, val=0.398129; force_rmse: train=0.133980, val=0.794071
+2024-04-02 23:46:24 (INFO): Step 499: reducing on plateu by 0.5.
+2024-04-02 23:47:20 (INFO): 112500/112500 (epoch 995): loss: train=0.133233, val=0.791538; energy_mae: train=0.039636, val=0.540792; force_mae: train=0.066453, val=0.398129; force_rmse: train=0.134179, val=0.794071
+2024-04-02 23:50:19 (INFO): Test metrics: loss:  test=1.138371; energy_mae:  test=3.721735; force_mae:  test=0.556401; force_rmse:  test=1.112276
+loss_val: 0.5954607725143433
+energy_mae_val: 1.3300964832305908
+force_mae_val: 0.29504910111427307
+force_rmse_val: 0.588040292263031
+step: 4500
+wall time per epoch:29.062s
