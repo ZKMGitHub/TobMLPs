@@ -1,0 +1,29 @@
+name: 'tob9'
+n_train: 450
+n_val: 50
+seed: 42
+
+energy_and_force: True
+cutoff: 4.0
+num_layers: 4
+hidden_channels: 128
+out_channels: 1
+int_emb_size: 64
+basis_emb_size: 8
+out_emb_channels: 256
+num_spherical: 3
+num_radial: 6
+envelope_exponent: 5
+num_before_skip: 1
+num_after_skip: 2
+num_output_layers: 3
+
+
+epochs: 1000
+batch_size: 64
+vt_batch_size: 64
+lr: 0.0005
+lr_decay_factor: 0.5
+lr_decay_step_size: 200
+save_dir: './logs/'
+log_dir: './logs/'
